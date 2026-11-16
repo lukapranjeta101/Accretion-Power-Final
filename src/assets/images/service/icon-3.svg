@@ -12,16 +12,16 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4.45459 30.9768V35.3994H7.34289L9.14759 30.9768H4.45459Z" fill="#191919"/>
 <defs>
 <linearGradient id="paint0_linear_455_1763" x1="25.312" y1="4.84488" x2="28.9026" y2="8.56558" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F66234"/>
-<stop offset="1" stop-color="#C8370B"/>
+<stop stop-color="#155DFC"/>
+<stop offset="1" stop-color="#124BCC"/>
 </linearGradient>
 <linearGradient id="paint1_linear_455_1763" x1="9.90631" y1="4.84488" x2="13.4968" y2="8.56639" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F66234"/>
-<stop offset="1" stop-color="#C8370B"/>
+<stop stop-color="#155DFC"/>
+<stop offset="1" stop-color="#124BCC"/>
 </linearGradient>
 <linearGradient id="paint2_linear_455_1763" x1="17.6092" y1="4.84488" x2="21.1997" y2="8.56563" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F66234"/>
-<stop offset="1" stop-color="#C8370B"/>
+<stop stop-color="#155DFC"/>
+<stop offset="1" stop-color="#124BCC"/>
 </linearGradient>
 </defs>
 </svg>

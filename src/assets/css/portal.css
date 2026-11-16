@@ -1,0 +1,76 @@
+.portal-page { background: var(--color-default-100); }
+.portal { padding-block: 140px 80px; min-height: 80vh; }
+.portal-header { margin-bottom: 36px; max-width: 760px; }
+.portal-header h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin: 16px 0; letter-spacing: -.035em; }
+.portal-header p { line-height: 1.65; max-width: 62ch; }
+.portal-kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; border: 1px solid var(--color-default-300); border-radius: 20px; padding: 6px 14px; background: white; }
+.portal-kicker::before { content: ''; background: var(--color-primary); width: 8px; height: 8px; }
+.portal-auth { max-width: 640px; margin-inline: auto; }
+.portal-auth .portal-header { text-align: center; }
+.portal-panel { background: white; border: 1px solid var(--color-default-200); border-radius: 8px; padding: clamp(20px, 4vw, 36px); min-width: 0; }
+.portal-panel + .portal-panel { margin-top: 24px; }
+.portal-panel h2 { font-size: 24px; margin-bottom: 20px; }
+.portal-panel h3 { font-size: 20px; margin-bottom: 12px; }
+.portal-panel p { line-height: 1.6; }
+.portal-form { display: grid; gap: 22px; }
+.portal-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.portal label { display: block; color: var(--color-default-900); font-size: 15px; margin-bottom: 8px; }
+.portal :is(input,select,textarea) { border: 1px solid var(--color-default-300); border-radius: 4px; width: 100%; min-height: 48px; padding: 12px; font-size: 16px; background: white; color: var(--color-default-900); }
+.portal textarea { resize: vertical; min-height: 120px; }
+.portal :is(a,button,input,select,textarea):focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
+.portal small { font-size: 13px; line-height: 1.5; display: block; margin-top: 6px; }
+.portal-btn { display: inline-flex; justify-content: center; align-items: center; gap: 12px; min-height: 48px; padding: 12px 22px; border-radius: 4px 4px 18px 4px; background: var(--color-primary); color: white; font-size: 16px; font-weight: 600; border: 1px solid transparent; text-align: center; }
+.portal-btn:hover { background: var(--color-primary-hover); }
+.portal-btn.secondary { background: var(--color-default-900); }
+.portal-btn.quiet { background: white; color: var(--color-default-900); border-color: var(--color-default-300); }
+.portal-btn.danger { background: #9f2626; }
+.portal button:disabled { cursor: wait; opacity: .55; }
+.portal-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 24px; }
+.portal-link { color: var(--color-primary-2); text-decoration: underline; text-underline-offset: 4px; }
+.portal-note { background: var(--color-primary-light); border-left: 3px solid var(--color-primary); border-radius: 4px; padding: 16px 20px; line-height: 1.65; margin-block: 20px; }
+.portal-feedback { padding: 16px; border-radius: 4px; margin-bottom: 24px; background: #eef4ff; color: #123981; overflow-wrap: anywhere; }
+.portal-feedback.error { background: #fff0f0; color: #8c2020; }
+.portal-feedback:empty { display: none; }
+.portal-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 32px; border-bottom: 1px solid var(--color-default-300); padding-bottom: 20px; }
+.portal-nav a { min-height: 44px; display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 4px; }
+.portal-nav a[aria-current=page] { background: var(--color-default-900); color: white; }
+.portal-nav button { margin-left: auto; }
+.portal-status { display: inline-block; border-radius: 20px; padding: 5px 12px; background: var(--color-primary-light); color: #123981; font-size: 13px; }
+.portal-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-block: 24px; }
+.portal-facts dt { font-size: 14px; margin-bottom: 8px; }
+.portal-facts dd { color: var(--color-default-900); overflow-wrap: anywhere; line-height: 1.5; }
+.portal-quote-layout { display: grid; grid-template-columns: minmax(0,1fr) 340px; align-items: start; gap: 24px; }
+.portal-summary { position: sticky; top: 120px; }
+.portal-summary dl > div { display: flex; justify-content: space-between; gap: 16px; margin-block: 16px; }
+.portal-summary .total { border-top: 1px solid var(--color-default-300); padding-top: 20px; font-size: 21px; color: var(--color-default-900); }
+.portal-line { display: grid; grid-template-columns: minmax(0,1fr) 105px; gap: 18px; padding-block: 22px; border-bottom: 1px solid var(--color-default-200); }
+.portal-line:first-child { padding-top: 0; }
+.portal-line h3 { font-size: 18px; margin: 0 0 6px; }
+.portal-line .portal-prices { grid-column: 1/-1; display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
+.portal-line button { padding: 5px 0; min-height: 44px; color: #9f2626; font-size: 14px; }
+.portal-request { border-top: 1px solid var(--color-default-200); padding-block: 24px; }
+.portal-request summary { cursor: pointer; color: var(--color-default-900); min-height: 48px; line-height: 1.7; overflow-wrap: anywhere; }
+.portal-request[open] summary { margin-bottom: 24px; }
+.portal-request table { width: 100%; text-align: left; border-collapse: collapse; font-size: 14px; }
+.portal-request th, .portal-request td { padding: 12px 8px; border-bottom: 1px solid var(--color-default-200); }
+.portal-table-scroll { overflow-x: auto; }
+.portal-request .notes { white-space: pre-wrap; overflow-wrap: anywhere; }
+.portal-mail { display: grid; gap: 8px; padding-block: 16px; border-bottom: 1px solid var(--color-default-200); overflow-wrap: anywhere; }
+.portal-empty { text-align: center; padding-block: 32px; }
+.portal [hidden] { display: none !important; }
+@media(max-width: 900px) { .portal-quote-layout { grid-template-columns: 1fr; } .portal-summary { position: static; } }
+@media(max-width: 640px) {
+    .portal { padding-top: 120px; }
+    .portal-header { text-align: center; }
+    .portal-fields, .portal-facts { grid-template-columns: 1fr; }
+    .portal-nav { justify-content: center; gap: 4px; }
+    .portal-nav button { margin-left: 0; }
+    .portal-line { grid-template-columns: minmax(0,1fr) 85px; gap: 12px; }
+    .portal-actions > .portal-btn { flex: 1 1 auto; }
+    .portal-request th, .portal-request td { padding-inline: 4px; }
+}
+.portal-quote-layout > .portal-panel { margin-top: 0; }
+@media(max-width: 640px) {
+    .portal-product-picker { align-items: stretch; flex-direction: column; }
+    .portal-product-picker > div { flex-basis: auto; width: 100%; }
+}

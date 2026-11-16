@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "daniel-mercer",
+    "name": "Daniel Mercer",
+    "role": "Utility Procurement Manager",
+    "quote": "Ben gave us a clear point of contact from the first enquiry through the final specification. Having our component requirements and purchasing questions handled together made the process easier for our team."
+  },
+  {
+    "slug": "rachel-bennett",
+    "name": "Rachel Bennett",
+    "role": "Switchgear Engineering Manager",
+    "quote": "Our epoxy component needed a few drawing revisions before we could move forward. The team worked through the mounting details with us and kept the technical discussion clear and practical."
+  },
+  {
+    "slug": "michael-chen",
+    "name": "Michael Chen",
+    "role": "Manufacturing Operations Director",
+    "quote": "We needed copper bus bar fabricated to fit an existing assembly. Reviewing the bend details, hole patterns, and finish up front helped us keep engineering and production on the same page."
+  },
+  {
+    "slug": "elena-ramirez",
+    "name": "Elena Ramirez",
+    "role": "Electrical Design Lead",
+    "quote": "We came in with an application requirement rather than a final part number. Accretion Power helped us work through the porcelain and composite options and identify what needed to be confirmed before ordering."
+  },
+  {
+    "slug": "james-whitaker",
+    "name": "James Whitaker",
+    "role": "Substation Project Manager",
+    "quote": "Clear communication matters when several component requirements are moving at once. Ben kept the conversation focused on our drawings, quantities, and schedule, so we always knew what the next step was."
+  }
+]

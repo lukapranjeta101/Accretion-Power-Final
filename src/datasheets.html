@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> home-title-meta title="Datasheets | Accretion Power" }}
+    {{> head-css}}
+    <link rel="stylesheet" href="assets/css/datasheets.css">
+    <script type="module" src="assets/js/datasheets.js"></script>
+</head>
+<body>
+    {{> navbar}}
+    <main class="pt-35 lg:pt-45 pb-20 lg:pb-25">
+        <div class="container">
+            <header class="mb-10 lg:mb-12.5">
+                <div class="inline-flex items-center gap-2 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 mb-5">
+                    <span class="size-2 bg-primary" aria-hidden="true"></span>
+                    <span class="text-sm text-default-900">Technical resources</span>
+                </div>
+                <h1 class="lg:text-7xl md:text-[56px] text-[48px] mb-5">Datasheets</h1>
+                <p class="max-w-200 text-default-600">Browse and download technical datasheets for Accretion Power components and parts.</p>
+            </header>
+
+            <section aria-label="Find a datasheet" class="bg-default-100 border border-default-200 rounded-lg p-5 md:p-6 mb-7.5">
+                <label for="datasheet-search" class="block text-sm font-semibold text-default-900 mb-2.5">Search documents</label>
+                <div class="relative max-w-200">
+                    <i class="iconify tabler--search absolute start-4 top-3.5 size-5 text-default-500" aria-hidden="true"></i>
+                    <input id="datasheet-search" type="search" placeholder="Search by title, product, or model number" autocomplete="off" class="w-full rounded bg-white border-default-300 ps-12 pe-4 py-3 text-base text-default-900">
+                </div>
+            </section>
+            <div class="flex flex-wrap justify-between items-center gap-4 mb-4">
+                <p id="datasheet-count" role="status" aria-live="polite" class="text-sm text-default-600">12 documents</p>
+                <button id="clear-datasheet-filters" type="button" class="text-sm text-primary underline underline-offset-4" hidden>Clear filters</button>
+            </div>
+            <p id="datasheet-action-status" role="status" aria-live="polite" class="text-sm text-default-900 mb-4"></p>
+            <noscript><p class="mb-5">Enable JavaScript to search, preview, print, and download these documents.</p></noscript>
+
+            <div class="lg:grid lg:grid-cols-[220px_1fr] lg:gap-8 lg:items-start">
+                <nav aria-label="Datasheet categories" class="mb-6 lg:mb-0 lg:sticky lg:top-28">
+                    <ul id="datasheet-filters" class="datasheet-sidebar" role="group" aria-label="Document category">
+                        <li><button type="button" class="datasheet-filter" data-category="All" aria-pressed="true">All documents</button></li>
+                        {{#each datasheetCategories}}
+                        <li><button type="button" class="datasheet-filter" data-category="{{this}}" aria-pressed="false">{{this}}</button></li>
+                        {{/each}}
+                    </ul>
+                </nav>
+
+                <div id="datasheet-content">
+                    {{#each groupedDatasheets}}
+                    <section class="datasheet-category-section" data-category-section aria-labelledby="datasheet-cat-{{@index}}">
+                        <h2 id="datasheet-cat-{{@index}}" class="datasheet-category-heading">{{category}}</h2>
+                        <div class="datasheet-table-wrap">
+                            <table class="datasheet-table">
+                                <colgroup>
+                                    <col class="datasheet-col-document">
+                                    <col class="datasheet-col-models">
+                                    <col class="datasheet-col-pages">
+                                    <col class="datasheet-col-actions">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Document</th>
+                                        <th scope="col">Model numbers</th>
+                                        <th scope="col">Pages</th>
+                                        <th scope="col" class="datasheet-table-actions-head">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each items}}
+                                    <tr class="datasheet-row" data-document="{{id}}">
+                                        <td>
+                                            <span class="border border-default-300 rounded px-1.5 py-0.5 text-xs tracking-wide text-default-600 inline-block mb-1.5">PDF</span>
+                                            <h3 class="text-base md:text-lg mb-1 break-words">{{title}}</h3>
+                                            <p class="text-sm text-default-600 leading-relaxed">{{description}}</p>
+                                        </td>
+                                        <td>
+                                            <div class="model-chip-list">
+                                                {{#each models}}<span class="model-chip">{{this}}</span>{{/each}}
+                                            </div>
+                                        </td>
+                                        <td class="text-sm text-default-700 whitespace-nowrap">{{pageLabel}}</td>
+                                        <td>
+                                            <div class="flex flex-wrap gap-2 justify-start lg:justify-end">
+                                                <button type="button" class="datasheet-button datasheet-button-primary" data-view="{{id}}" aria-label="View PDF: {{title}}"><i class="iconify tabler--file-type-pdf size-5" aria-hidden="true"></i>View PDF</button>
+                                                <button type="button" class="datasheet-button" data-download="{{id}}" aria-label="Download: {{title}}"><i class="iconify tabler--download size-5" aria-hidden="true"></i>Download</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    {{/each}}
+                </div>
+            </div>
+            <div id="datasheet-empty" class="text-center border border-default-200 bg-default-50 rounded-lg px-6 py-12" hidden>
+                <h2 class="text-2xl mb-3">No matching documents</h2>
+                <p class="text-default-600 mb-5">Try another product name or model number, or clear your filters.</p>
+                <button id="reset-datasheet-filters" type="button" class="datasheet-button datasheet-button-primary">Clear filters</button>
+            </div>
+            <div class="flex flex-wrap justify-between gap-4 mt-10 text-base">
+                <p class="text-default-600">Need help finding a drawing or confirming a specification?</p>
+                <a href="contact.html" class="text-primary underline underline-offset-4 hover:text-primary-hover">Contact our team</a>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="pdf-modal" class="pdf-modal" aria-labelledby="pdf-modal-title" aria-describedby="pdf-modal-description">
+        <div class="pdf-panel">
+            <header class="pdf-toolbar">
+                <div class="min-w-0 flex-1">
+                    <h2 id="pdf-modal-title" class="text-base md:text-lg break-words"></h2>
+                    <p id="pdf-modal-description" class="text-xs text-default-600 mt-1">Original PDF document</p>
+                </div>
+                <div class="pdf-actions">
+                    <button id="pdf-print" type="button" class="datasheet-button" disabled><i class="iconify tabler--printer size-5" aria-hidden="true"></i>Print</button>
+                    <button id="pdf-download" type="button" class="datasheet-button datasheet-button-primary"><i class="iconify tabler--download size-5" aria-hidden="true"></i>Download</button>
+                    <button id="pdf-close" type="button" class="datasheet-button pdf-close" aria-label="Close PDF preview" autofocus><i class="iconify tabler--x size-6" aria-hidden="true"></i></button>
+                </div>
+            </header>
+            <div class="pdf-controls">
+                <div class="flex items-center gap-2">
+                    <button id="pdf-zoom-out" type="button" class="datasheet-button" aria-label="Zoom out" disabled><i class="iconify tabler--minus size-4" aria-hidden="true"></i></button>
+                    <output id="pdf-zoom-label" class="text-sm min-w-12 text-center" aria-live="polite">Fit</output>
+                    <button id="pdf-zoom-in" type="button" class="datasheet-button" aria-label="Zoom in" disabled><i class="iconify tabler--plus size-4" aria-hidden="true"></i></button>
+                    <button id="pdf-fit" type="button" class="datasheet-button text-sm" disabled>Fit width</button>
+                </div>
+                <span id="pdf-page-count" class="text-sm text-default-600"></span>
+            </div>
+            <p id="pdf-note" class="pdf-notice" hidden></p>
+            <p id="pdf-status" class="pdf-notice" role="status" aria-live="polite"></p>
+            <div id="pdf-scroll" class="pdf-scroll" tabindex="0" aria-label="PDF pages" aria-busy="false">
+                <div id="pdf-pages" class="pdf-pages"></div>
+            </div>
+        </div>
+    </dialog>
+    {{> footer}}
+</body>
+</html>

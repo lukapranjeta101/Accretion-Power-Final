@@ -2,36 +2,36 @@
 <html lang="en">
 
 <head>
-    {{> title-meta title="Contact Us" }}
+    {{> home-title-meta title="Contact Us | Accretion Power" }}
 
     {{> head-css}}
 </head>
 
-<body>
+<body class="contact-page">
 
     {{> navbar }}
 
     <section class="overflow-hidden relative size-full pt-50 bg-default-100">
         <div class="container-full relative z-10">
             <div class="grid xl:grid-cols-2 items-start xl:gap-25 gap-12.5 mb-32.5">
-                <div class="lg:w-152 h-full flex flex-col">
+                <div class="min-w-0 h-full flex flex-col">
 
                     <h1 class="lg:text-7xl md:text-[56px] text-[48px] mb-7.5">We're <span class="text-primary">ready</span> to <br> listen</h1>
 
                     <p class="mb-7.5">
-                        Got questions or need assistance? Reach out to us anytime — our team is ready to provide the support and guidance you need.
+                        Contact Accretion Power about electrical components, custom requirements, or your next project. Share your part list, drawings, quantities, and timing with our team.
                     </p>
 
                     <div>
-                        <a href="contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
+                        <a href="mailto:benjamin.vietmeier@accretionpower.com?subject=Project%20enquiry" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
                             <!-- TEXT -->
                             <span class="py-3.75 ps-6">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Contact Now
+                                        Email Our Team
                                     </span>
                                     <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Contact Now
+                                        Email Our Team
                                     </span>
                                 </span>
                             </span>
@@ -50,14 +50,14 @@
                         </a>
                     </div>
 
-                    <div class="flex lg:gap-20 gap-10 mt-auto pt-10">
+                    <div class="grid sm:grid-cols-2 gap-8 mt-auto pt-10">
                         <div>
                             <div class="text-primary mb-5">// Contact us on //</div>
 
                             <div class="flex flex-col gap-2">
-                                <a href="tel:+(558)845889" class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600">+(558) 845 889</a>
-                                <a href="tel:+(41)845889568" class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600">+(41) 845 889 568</a>
-                                <a href="mailto:example@gmail.com" class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600">example@gmail.com</a>
+                                <p class="text-default-900">Ben Veitmeier</p>
+                                <a href="tel:+14125106454" class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600">+1 412 510 6454</a>
+                                <a href="mailto:benjamin.vietmeier@accretionpower.com" class="break-words underline decoration-transparent transition-all duration-300 hover:decoration-default-600">benjamin.vietmeier@accretionpower.com</a>
                             </div>
                         </div>
 
@@ -65,35 +65,37 @@
                             <div class="text-primary mb-5">// Find us //</div>
 
                             <div class="flex flex-col gap-2">
-                                <p>USA - 123 creative street, suite 456, new york, NY 10001</p>
-                                <p>USA - 93 back street, suite 786, new york, ny 10005</p>
+                                <p>Pittsburgh, Pennsylvania<br>United States</p>
+                                <p>Serving North American utilities and global OEMs.</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="p-7.5 bg-linear-to-br from-black via-black to-primary rounded-lg">
+                <div class="min-w-0 p-6 md:p-7.5 bg-linear-to-br from-black via-black to-primary rounded-lg">
+                    <h2 class="text-2xl text-white mb-3">Tell us about your project</h2>
+                    <p id="contact-form-help" class="text-default-300 text-base mb-7.5">Complete the details below to open a draft in your email app. You can review it and attach drawings before sending.</p>
 
-                    <div class="grid md:grid-cols-2 gap-7.5">
+                    <form id="contact-enquiry" class="grid md:grid-cols-2 gap-7.5" aria-describedby="contact-form-help">
                         <div>
                             <label for="First-Name" class="text-default-300 block mb-2.5">First name *</label>
-                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="First-Name" type="text" id="First-Name">
+                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="First-Name" type="text" id="First-Name" autocomplete="given-name" required>
                         </div>
 
                         <div>
                             <label for="Last-Name" class="text-default-300 block mb-2.5">Last name *</label>
-                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="Last-Name" type="text" id="First-Name">
+                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="Last-Name" type="text" id="Last-Name" autocomplete="family-name" required>
                         </div>
 
                         <div>
                             <label for="email-address" class="text-default-300 block mb-2.5">Email address *</label>
-                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="email-address" type="text" id="email-address">
+                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="email-address" type="email" id="email-address" autocomplete="email" required>
                         </div>
 
                         <div>
-                            <label for="phone-number" class="text-default-300 block mb-2.5">Phone number *</label>
-                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="phone-number" type="tel" id="phone-number">
+                            <label for="phone-number" class="text-default-300 block mb-2.5">Phone number (optional)</label>
+                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" maxlength="256" name="phone-number" type="tel" id="phone-number" autocomplete="tel">
                         </div>
 
                         <div class="md:col-span-2">
@@ -102,17 +104,17 @@
                         </div>
 
                         <div class="md:col-span-2">
-                            <label for="message" class="text-default-300 block mb-2.5">Message</label>
-                            <textarea class="w-full bg-default-900 inline-flex border-default-700 rounded text-white" rows="5" maxlength="256" name="message" id="message"></textarea>
+                            <label for="message" class="text-default-300 block mb-2.5">Message *</label>
+                            <textarea class="w-full bg-default-900 inline-flex border-default-700 rounded text-white" rows="5" maxlength="5000" name="message" id="message" required></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="inline-flex py-3.75 px-6 items-center gap-5 text-default-900 rounded rounded-ee-2xl bg-white transition-all text-base font-medium">
-                                Submit
-                            </a>
+                            <button type="submit" class="inline-flex py-3.75 px-6 items-center gap-5 text-default-900 rounded rounded-ee-2xl bg-white transition-all text-base font-medium">
+                                Open Email Draft
+                            </button>
                         </div>
-                    </div>
-
+                        <p id="contact-form-status" role="status" class="md:col-span-2 text-sm text-white"></p>
+                    </form>
 
                 </div>
             </div>

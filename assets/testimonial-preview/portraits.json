@@ -1,0 +1,31 @@
+{
+  "mode": "Built-in image_gen",
+  "usage": "Fictional portraits for client preview only; not real clients or endorsements.",
+  "portraits": [
+    {
+      "slug": "daniel-mercer",
+      "prompt": "Use case: photorealistic-natural. Asset: square professional headshot for a fictional client-preview website, not a real person or endorsement. A fictional male utility procurement manager in his early 50s, light skin, short salt-and-pepper hair, navy work shirt, confident approachable expression, softly blurred electrical equipment facility office behind him. Chest-up, face centered with generous headroom suitable for circular avatar cropping, eye-level camera, soft natural daylight, restrained cool-neutral colors, realistic skin texture, understated corporate industrial photography, 85mm portrait lens, shallow depth of field. One person only. No text, no logos, no watermark, no hardhat, no badges, no illustration. Match a cohesive professional portrait series.",
+      "source": "/Users/luka/.codex/generated_images/01a1882a-e4cb-7520-8f54-c794cbfa6d32/exec-9f89e1d5-7c3c-450b-8873-b4c35f7f536b.png"
+    },
+    {
+      "slug": "rachel-bennett",
+      "prompt": "Use case: photorealistic-natural. Asset: square professional headshot for a fictional client-preview website, not a real person or endorsement. A fictional female switchgear engineering manager in her early 40s, Black, natural shoulder-length hair, charcoal collared professional work shirt, composed friendly expression, softly blurred switchgear testing laboratory behind her. Chest-up, face centered with generous headroom suitable for circular avatar cropping, eye-level camera, soft natural daylight, restrained cool-neutral colors, realistic skin texture, understated corporate industrial photography, 85mm portrait lens, shallow depth of field. One person only. No text, no logos, no watermark, no hardhat, no badges, no illustration. Match a cohesive professional portrait series.",
+      "source": "/Users/luka/.codex/generated_images/01a1882a-e4cb-7520-8f54-c794cbfa6d32/exec-51c308c6-a998-4999-910f-b5bf6857c475.png"
+    },
+    {
+      "slug": "michael-chen",
+      "prompt": "Use case: photorealistic-natural. Asset: square professional headshot for a fictional client-preview website, not a real person or endorsement. A fictional male manufacturing operations director in his late 40s, East Asian, short black hair with a few gray strands, dark blue button-down work shirt, relaxed professional smile, softly blurred modern electrical assembly facility behind him. Chest-up, face centered with generous headroom suitable for circular avatar cropping, eye-level camera, soft natural daylight, restrained cool-neutral colors, realistic skin texture, understated corporate industrial photography, 85mm portrait lens, shallow depth of field. One person only. No text, no logos, no watermark, no hardhat, no badges, no illustration. Match a cohesive professional portrait series.",
+      "source": "/Users/luka/.codex/generated_images/01a1882a-e4cb-7520-8f54-c794cbfa6d32/exec-c4be95ac-e503-42a7-8c1f-1f1530c49a1f.png"
+    },
+    {
+      "slug": "elena-ramirez",
+      "prompt": "Use case: photorealistic-natural. Asset: square professional headshot for a fictional client-preview website, not a real person or endorsement. A fictional female electrical design lead in her late 30s, Latina, dark brown hair tied back neatly, navy collared shirt, warm confident expression, softly blurred engineering office with technical drawings behind her. Chest-up, face centered with generous headroom suitable for circular avatar cropping, eye-level camera, soft natural daylight, restrained cool-neutral colors, realistic skin texture, understated corporate industrial photography, 85mm portrait lens, shallow depth of field. One person only. No text, no logos, no watermark, no hardhat, no badges, no illustration. Match a cohesive professional portrait series.",
+      "source": "/Users/luka/.codex/generated_images/01a1882a-e4cb-7520-8f54-c794cbfa6d32/exec-7f21f509-a9d0-402a-a18e-3b1b2258e4bb.png"
+    },
+    {
+      "slug": "james-whitaker",
+      "prompt": "Use case: photorealistic-natural. Asset: square professional headshot for a fictional client-preview website, not a real person or endorsement. A fictional male substation project manager in his late 50s, medium brown skin, closely cropped graying hair and neat short beard, charcoal polo shirt, calm experienced friendly expression, softly blurred utility operations office behind him. Chest-up, face centered with generous headroom suitable for circular avatar cropping, eye-level camera, soft natural daylight, restrained cool-neutral colors, realistic skin texture, understated corporate industrial photography, 85mm portrait lens, shallow depth of field. One person only. No text, no logos, no watermark, no hardhat, no badges, no illustration. Match a cohesive professional portrait series.",
+      "source": "/Users/luka/.codex/generated_images/01a1882a-e4cb-7520-8f54-c794cbfa6d32/exec-03fbe4db-ab4e-427a-8270-f81073096a0f.png"
+    }
+  ]
+}

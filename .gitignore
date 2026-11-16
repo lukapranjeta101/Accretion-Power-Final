@@ -2,3 +2,14 @@ node_modules/
 dist/
 .DS_Store
 *.log
+test-results/
+playwright-report/
+
+# Private account data and server configuration
+.env
+.env.*
+!.env.example
+var/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

@@ -4,10 +4,12 @@
     --font-heading: "Mona Sans", sans-serif;
     --font-body: "Geist", sans-serif;
 
-    --color-primary: #c8370b;
-    --color-primary-1: #f66234;
-    --color-primary-2: #c8370b;
-    --color-primary-3: #9e3211;
+    --color-primary: #155DFC;
+    --color-primary-1: #155DFC;
+    --color-primary-2: #124BCC;
+    --color-primary-3: #124BCC;
+    --color-primary-hover: #124BCC;
+    --color-primary-light: #EFF4FF;
 
     --color-body-bg: var(--color-white);
     --color-body-color: var(--color-zinc-600);

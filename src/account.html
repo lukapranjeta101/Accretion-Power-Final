@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> home-title-meta title="Your Account | Accretion Power" }}
+    {{> head-css }}
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <link rel="stylesheet" href="assets/css/portal.css">
+    <script type="module" src="assets/js/portal.js"></script>
+</head>
+<body class="portal-page" data-portal-page="account">
+    {{> navbar }}
+    <main class="portal">
+        <div class="container ">
+            <nav class="portal-nav" id="portal-nav" aria-label="Account navigation" hidden></nav>
+            <header class="portal-header">
+                <span class="portal-kicker">Your Account</span>
+                <h1>Your access, at a glance.</h1>
+                <p>Check your application status and manage your Accretion Power requests.</p>
+            </header>
+            <div id="portal-feedback" class="portal-feedback" role="status" aria-live="polite" tabindex="-1"></div>
+            <div id="portal-content" aria-busy="true"><p>Loading…</p></div>
+            <noscript><p>Enable JavaScript to use the secure account portal.</p></noscript>
+        </div>
+    </main>
+    {{> footer }}
+</body>
+</html>

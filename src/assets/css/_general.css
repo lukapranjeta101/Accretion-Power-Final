@@ -55,9 +55,27 @@ textarea {
     @apply bg-primary/8;
 }
 
+/* Accent controls retain their existing motion and use the darker state color. */
+@layer utilities {
+    :is(a, button).bg-primary:is(:hover, :active),
+    :is(a, button).group:is(:hover, :active) .bg-primary {
+        background-color: var(--color-primary-hover);
+    }
+}
+
 
 
 /* Infinite horizontal scroll */
+
+/* Blue project banner with a subtle technical grid. */
+.project-cta-background {
+    background-color: #103da8;
+    background-image:
+        linear-gradient(90deg, #0b245f 0%, transparent 75%),
+        repeating-linear-gradient(0deg, transparent 0 39px, rgb(255 255 255 / 6%) 39px 40px),
+        repeating-linear-gradient(90deg, transparent 0 39px, rgb(255 255 255 / 6%) 39px 40px),
+        linear-gradient(120deg, #123981, #155dfc);
+}
 
 /* Normal direction */
 @keyframes infinite-scroll {
@@ -89,4 +107,121 @@ textarea {
 .infinite-scroll-inverse {
     animation: infinite-scroll-inverse 100s linear infinite;
     will-change: transform;
+}
+
+/* Phone layouts: centered introductions, readable detail, and comfortable gutters. */
+@media (max-width: 767px) {
+    .container,
+    .container-full {
+        padding-inline: 20px;
+    }
+
+    section :is(h1, h2, h3) {
+        text-wrap: balance;
+    }
+
+    section p {
+        line-height: 1.6;
+    }
+
+    body > section:first-of-type,
+    .product-detail > section:first-child {
+        padding-top: 128px;
+    }
+
+    body > section:first-of-type h1 {
+        font-size: clamp(2.25rem, 10vw, 3rem);
+        line-height: 1.12;
+    }
+
+    .mobile-intro,
+    .project-cta-background,
+    .contact-page > section > .container-full > .grid > div:first-child,
+    .product-detail > section:first-child .grid > .min-w-0:first-child,
+    .products-page .grid > .group {
+        text-align: center;
+    }
+
+    .mobile-intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        margin-bottom: 48px;
+    }
+
+    .mobile-intro .ms-auto {
+        margin-inline: auto;
+    }
+
+    .mobile-intro .flex.flex-wrap,
+    .mobile-intro .flex.-space-x-4\.5 {
+        justify-content: center;
+    }
+
+    .home-page section > :is(.container, .container-full) > .inline-flex {
+        display: flex;
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .hero-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .hero-meta > a { order: 1; }
+    .founder-video { height: 660px; }
+    .founder-quote { width: min(34ch, calc(100vw - 40px)); }
+
+    .project-cta-background .self-start { align-self: center; }
+    .project-cta-background h2 br { display: none; }
+
+    .product-detail nav ol,
+    .product-detail section:last-child .flex.flex-wrap {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product-detail #product-options { text-align: center; }
+
+    .contact-page > section > .container-full > .grid {
+        gap: 40px;
+        margin-bottom: 56px;
+    }
+
+    .contact-page h1 br { display: none; }
+    .contact-page a[href^="mailto:"] { overflow-wrap: anywhere; }
+    #contact-enquiry { gap: 20px; }
+    #contact-enquiry button { width: 100%; justify-content: center; }
+
+    #footer { text-align: center; }
+    #footer > .container-full { padding-top: 64px; }
+    #footer .footer-contact { grid-column: 1 / -1; }
+    #footer h5 { margin-bottom: 16px; }
+    #footer ul { display: grid; gap: 4px; }
+    #footer ul > li { margin: 0; }
+    #footer li a { display: inline-flex; align-items: center; min-height: 44px; }
+    #footer .footer-contact a { overflow-wrap: anywhere; display: inline-block; padding-block: 10px; }
+    #footer input { font-size: 16px; }
+    #footer form { max-width: 400px; margin-inline: auto; text-align: left; }
+    #footer .footer-contact { max-width: 100%; min-width: 0; }
+
+    .navbar a > img { width: min(45vw, 224px); }
+    #mobile-menu .hs-accordion-content a { min-height: 44px; display: flex; align-items: center; }
+}
+
+@media (max-width: 767px) {
+    .about-page > section:first-of-type .flex.flex-wrap {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-page > section:nth-of-type(2) .bg-primary > div:first-child {
+        text-align: center;
+    }
+
+    .about-page > section:nth-of-type(2) .items-start {
+        align-items: center;
+    }
 }

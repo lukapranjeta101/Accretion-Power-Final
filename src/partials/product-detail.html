@@ -1,0 +1,93 @@
+<main class="product-detail">
+    <section class="bg-default-100 pt-35 lg:pt-45 pb-16 lg:pb-25">
+        <div class="container">
+            <nav aria-label="Breadcrumb" class="mb-10 text-sm text-default-600">
+                <ol class="flex flex-wrap items-center gap-3">
+                    <li><a href="index.html" class="hover:text-primary-hover">Home</a></li>
+                    <li aria-hidden="true">/</li>
+                    <li><a href="products.html" class="hover:text-primary-hover">Products</a></li>
+                    <li aria-hidden="true">/</li>
+                    <li aria-current="page" class="text-default-900">{{product.name}}</li>
+                </ol>
+            </nav>
+            <div class="grid lg:grid-cols-2 items-center gap-10 lg:gap-16">
+                <div class="min-w-0">
+                    <div class="inline-flex items-center gap-2 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 mb-6">
+                        <span class="size-2 bg-primary" aria-hidden="true"></span>
+                        <span class="text-sm text-default-900">Components we supply</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl xl:text-[64px] leading-tight mb-6">{{product.name}}</h1>
+                    <p class="text-xl md:text-2xl text-default-900 mb-5">{{product.summary}}</p>
+                    <p class="text-default-600 leading-relaxed mb-8">{{product.description}}</p>
+                    <a href="contact.html" class="inline-flex max-w-full items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                        <span class="py-3.75 ps-6">Discuss your requirements</span>
+                        <span class="m-1.25 flex size-10 shrink-0 items-center justify-center rounded rounded-ee-xl bg-primary" aria-hidden="true"><i class="iconify tabler--arrow-narrow-right size-6"></i></span>
+                    </a>
+                </div>
+                <div class="min-w-0">
+                    <img src="{{product.image}}" alt="{{product.name}}" width="1659" height="948" fetchpriority="high" class="w-full aspect-[7/4] object-cover object-center rounded-lg">
+                    <dl class="mt-6 divide-y divide-default-300 border-y border-default-300">
+                        {{#each product.details}}
+                        <div class="grid sm:grid-cols-3 gap-2 py-4">
+                            <dt class="text-sm text-default-600">{{label}}</dt>
+                            <dd class="sm:col-span-2 text-base text-default-900">{{value}}</dd>
+                        </div>
+                        {{/each}}
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-25" aria-labelledby="product-options">
+        <div class="container">
+            <h2 id="product-options" class="text-3xl md:text-4xl mb-10">{{product.optionsTitle}}</h2>
+            <div class="grid md:grid-cols-3 gap-5">
+                {{#each product.groups}}
+                <article class="bg-white border border-default-300 rounded p-6 lg:p-8">
+                    <h3 class="text-2xl mb-6">{{title}}</h3>
+                    <ul class="space-y-4">
+                        {{#each items}}
+                        <li class="flex items-start gap-3 text-base leading-relaxed text-default-600"><i class="iconify tabler--check text-primary size-5 shrink-0 mt-0.5" aria-hidden="true"></i><span>{{this}}</span></li>
+                        {{/each}}
+                    </ul>
+                </article>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-16 lg:pb-25" aria-labelledby="product-enquiry">
+        <div class="container">
+            <div class="project-cta-background rounded p-6 md:p-12">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+                    <div class="max-w-2xl">
+                        <h2 id="product-enquiry" class="text-white text-3xl md:text-4xl mb-5">Let’s discuss your next component.</h2>
+                        <p class="text-white leading-relaxed">{{product.enquiry}}</p>
+                    </div>
+                    <a href="contact.html" class="inline-flex self-start lg:self-center shrink-0 max-w-full items-center gap-5 rounded rounded-ee-2xl bg-white text-default-900 text-base font-medium focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                        <span class="py-3.75 ps-6">Contact our team</span>
+                        <span class="m-1.25 flex size-10 shrink-0 items-center justify-center rounded rounded-ee-xl bg-primary text-white" aria-hidden="true"><i class="iconify tabler--arrow-narrow-right size-6"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-default-100 py-16 lg:py-25" aria-labelledby="related-products">
+        <div class="container">
+            <div class="flex flex-wrap justify-between items-center gap-5 mb-10">
+                <h2 id="related-products" class="text-3xl md:text-4xl">Explore our other products</h2>
+                <a href="products.html" class="text-primary underline underline-offset-4 hover:text-primary-hover">View all products</a>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+                {{#each relatedProducts}}
+                <a href="{{href}}" class="group block bg-white p-4 rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                    <div class="overflow-hidden rounded mb-4"><img src="{{image}}" alt="" loading="lazy" decoding="async" class="w-full aspect-[7/4] object-cover object-center transition-transform duration-500 motion-reduce:transition-none motion-safe:group-hover:scale-105"></div>
+                    <div class="flex justify-between items-start gap-3"><h3 class="text-lg group-hover:text-primary-hover">{{name}}</h3><i class="iconify tabler--arrow-narrow-right size-6 shrink-0 text-primary" aria-hidden="true"></i></div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+</main>

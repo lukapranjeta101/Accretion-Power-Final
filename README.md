@@ -45,8 +45,8 @@ A modern, responsive, and fully customizable website template designed for manuf
 
 ### Prerequisites
 
-- **Node.js** >= 16 — [Download](https://nodejs.org/)
-- **Yarn** — [Docs](https://classic.yarnpkg.com/en/)
+- **Node.js** 20.19+ or 22.12+ — [Download](https://nodejs.org/)
+- **pnpm** 10 (the repository includes `pnpm-lock.yaml`)
 
 ### Installation
 
@@ -56,10 +56,10 @@ git clone https://github.com/your-username/fabrica.git
 cd fabrica
 
 # Install dependencies
-yarn install
+pnpm install
 
 # Start development server
-yarn dev
+pnpm dev
 ```
 
 The dev server runs at `http://localhost:5173`.
@@ -68,10 +68,10 @@ The dev server runs at `http://localhost:5173`.
 
 ```bash
 # Build for production
-yarn build
+pnpm build
 
 # Preview the production build
-yarn preview
+pnpm preview
 ```
 
 The production output is generated in the `dist/` folder.
@@ -144,3 +144,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 Built with care by [Mostafa Akajdid](https://akajdidm.vercel.app/)
 
 </div>
+
+## Accretion Power accounts and estimates
+
+The site now includes real server-side accounts, approval, and estimate requests. Use Node 24+ and `npm run dev` to run the complete site/API together. Run `npm run mail:local` in another terminal for the local SMTP inbox. See [the portal setup guide](server/README.md) for administrator setup, SMTP configuration, production operation, and tests. `vite preview` only previews static assets and does not provide the account APIs.

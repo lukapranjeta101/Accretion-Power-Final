@@ -2,42 +2,42 @@
 <html lang="en">
 
 <head>
-    {{> title-meta title="Fabrica - Tailwind CSS 4 Template" }}
+    {{> home-title-meta title="Accretion Power | Powering progress. Part by part." }}
 
     {{> head-css}}
 </head>
 
-<body>
+<body class="home-page">
 
     {{> navbar }}
 
     <!-- Hero Section -->
     <section class="overflow-hidden relative size-full lg:pt-50 pt-35">
         <div class="container-full relative z-10">
-            <div class="grid xl:grid-cols-4 items-center xl:gap-20 gap-12.5 mb-32.5">
+            <div class="mobile-intro grid xl:grid-cols-4 items-center xl:gap-20 gap-12.5 mb-32.5">
                 <div class="xl:col-span-3">
                     <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
                         <div class="size-2 bg-primary"></div>
-                        <div class="text-sm text-default-900">Trusted manufacturing partner</div>
+                        <div class="text-sm text-default-900">Accretion Power</div>
                     </div>
 
-                    <h1 class="font-bold lg:text-7xl md:text-[56px] text-[48px] mt-4">From raw <span class="text-primary">material</span> <br> to market-ready</h1>
+                    <h1 class="font-bold lg:text-7xl md:text-[56px] text-[48px] mt-4">Powering <span class="text-primary">progress.</span> <br> Part by part.</h1>
                 </div>
 
                 <div>
                     <div>
-                        <div class="text-sm text-default-900 mb-2.5">// SINCE - 2005 //</div>
-                        <p class="mb-7.5">From concept to production, we deliver high-quality, scalable, and cost-effective solutions tailored to your business needs.</p>
+                        <div class="text-sm text-default-900 mb-2.5">// SINCE - 2023 //</div>
+                        <p class="mb-7.5">Electrical components, manufacturing expertise, and personal service for North American utilities and global OEMs.</p>
 
-                        <a href="services.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
+                        <a href="products.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
                             <!-- TEXT -->
                             <span class="py-3.75 ps-6">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Explore Our Capabilities
+                                        Explore Our Products
                                     </span>
                                     <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Explore Our Capabilities
+                                        Explore Our Products
                                     </span>
                                 </span>
                             </span>
@@ -58,9 +58,9 @@
                 </div>
             </div>
 
-            <div class="flex justify-between mb-10">
-                <div class="text-sm text-default-900">Based in: Los Angeles, USA</div>
-                <a href="#footer" class="text-center uppercase text-sm transition-colors hover:text-primary">Scroll Down</a>
+            <div class="hero-meta flex justify-between mb-10">
+                <div class="text-sm text-default-900">Based in: Pittsburgh, PA</div>
+                <a href="#footer" class="text-center uppercase text-sm transition-colors hover:text-primary-hover">Scroll Down</a>
                 <div class="text-sm text-default-900">21.0278° N, 105.8342° E</div>
             </div>
         </div>
@@ -79,10 +79,9 @@
 
     <!-- About / Who We Are Section -->
     <section class="relative overflow-hidden">
-        <div class="overflow-hidden lg:h-275 h-250 w-full relative">
-            <video id="myVideo" loop autoplay muted class="bg-[url('../images/other/video-bg.jpg')] object-cover bg-cover bg-position-[50%] flex w-full h-full absolute -inset-full m-auto -z-10">
-                <source src="assets/images/other/video.mp4" type="video/mp4" class="object-bottom">
-                <source src="assets/images/other/video.webm" type="video/webm" class="object-bottom">
+        <div class="founder-video overflow-hidden lg:h-275 h-250 w-full relative">
+            <video id="myVideo" loop autoplay muted playsinline class="bg-[url('../images/other/video-bg.jpg')] object-cover bg-cover bg-position-[50%] flex w-full h-full absolute -inset-full m-auto -z-10">
+                <source src="assets/images/cncmachinevideo.mp4" type="video/mp4" class="object-bottom">
             </video>
 
             <div class="absolute end-10 bottom-10 z-100">
@@ -96,15 +95,15 @@
         <div class="absolute inset-0 flex items-end justify-center z-100 mb-25">
             <div>
                 <div class="mx-auto w-60 p-2.5 rounded border border-white/10 bg-default-900/20 mb-5">
-                    <img src="assets/images/a-quote.webp" alt="Hero Quote Image" class="mb-4 size-full rounded">
+                    <img src="assets/images/benvietmeir.png" alt="Ben Veitmeier, Founder and CEO" class="mb-4 size-full rounded">
 
                     <div class="text-center">
-                        <div class="text-white mb-1">Michael R. Bennett</div>
+                        <div class="text-white mb-1">Ben Veitmeier</div>
                         <div class="text-default-400 text-base">Founder &amp; CEO</div>
                     </div>
                 </div>
 
-                <p class="text-white text-center w-97">Great manufacturing isn't just about precision it's about vision, commitment, and the relentless pursuit of excellence.</p>
+                <p class="founder-quote text-white text-center w-97">Great manufacturing isn't just about precision it's about vision, commitment, and the relentless pursuit of excellence.</p>
             </div>
         </div>
 
@@ -114,7 +113,7 @@
     <!-- Capabilities / What We Do Section -->
     <section class="relative size-full bg-default-100 lg:py-50 md:py-25 py-20">
         <div class="container relative z-10">
-            <div class="grid xl:grid-cols-3 items-center gap-8 mb-32.5">
+            <div class="mobile-intro grid xl:grid-cols-3 items-center gap-8 mb-32.5">
                 <div>
                     <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
                         <div class="size-2 bg-primary"></div>
@@ -122,10 +121,10 @@
                     </div>
 
                     <div class="mt-7.5 mb-2.5 flex -space-x-4.5">
-                        <img src="assets/images/user/avatar-2.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
-                        <img src="assets/images/user/avatar-3.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
-                        <img src="assets/images/user/avatar-4.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
-                        <img src="assets/images/user/avatar-1.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/daniel-mercer.png" alt="Illustrative portrait of Daniel Mercer" loading="lazy" class="size-14 shrink-0 object-cover p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/rachel-bennett.png" alt="Illustrative portrait of Rachel Bennett" loading="lazy" class="size-14 shrink-0 object-cover p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/michael-chen.png" alt="Illustrative portrait of Michael Chen" loading="lazy" class="size-14 shrink-0 object-cover p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/elena-ramirez.png" alt="Illustrative portrait of Elena Ramirez" loading="lazy" class="size-14 shrink-0 object-cover p-0.5 bg-white rounded-md">
                         <div class="size-14 p-0.5 bg-white rounded-md">
                             <div class="bg-default-900 text-white rounded flex items-center justify-center size-full">
                                 10+
@@ -138,12 +137,12 @@
 
                 <div class="xl:col-span-2">
                     <div>
-                        <h2 class="lg:text-[58px] md:text-[34px] text-[28px]/[1.1] text-default-900 mb-7.5">Driven by technology, backed by experience, focused on
-                            <span class="text-primary">manufacturing</span>
-                            excellence
+                        <h2 class="lg:text-[58px] md:text-[34px] text-[28px]/[1.1] text-default-900 mb-7.5">Electrical products, manufacturing expertise, and personal service for
+                            <span class="text-primary">utilities</span>
+                            and OEMs
                         </h2>
 
-                        <p class="mb-7.5">Backed by advanced technology, skilled craftsmanship, and a commitment to quality, we help businesses bring their ideas to life with confidence and speed. Whether it's prototyping or full-scale production, we're your trusted partner every step of the way.</p>
+                        <p class="mb-7.5">Accretion Power helps utilities and OEMs source electrical components through our manufacturer network. Our own epoxy facility in India and Pennsylvania inventory support procurement, while direct contact with Ben Vietmeier keeps requirements clear.</p>
 
                         <div class="flex flex-wrap items-center lg:gap-7.5 gap-4">
                             <a href="about.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
@@ -186,7 +185,7 @@
         <div class="container-full relative z-10">
             <div class="flex flex-wrap justify-center">
                 <div class="bg-white border border-default-300 rounded-full lg:size-112 size-72 flex flex-col items-center justify-center text-center lg:pt-30 pt-14 overflow-hidden">
-                    <div class="text-primary lg:mb-7.5 mb-5">// 2005-2K25 //</div>
+                    <div class="text-primary lg:mb-7.5 mb-5">// 2023-2K25 //</div>
 
                     <div data-target="20" class="text-4xl text-default-900 font-bold">20+</div>
 
@@ -198,7 +197,7 @@
                 <img src="assets/images/about/about-image.webp" alt="" class="lg:size-112 size-72 rounded-full">
 
                 <div class="bg-white border border-default-300 rounded-full lg:size-112 size-72 flex flex-col items-center justify-center text-center overflow-hidden p-8">
-                    <img src="assets/images/logo.svg" alt="" class="lg:h-7.5 h-5 mb-10">
+                    <img src="assets/images/logo.svg" alt="ACCRETION POWER" class="lg:h-7.5 h-5 mb-10">
 
                     <div data-target="20" class="lg:text-[58px] md:text-[34px] text-[28px] text-default-900 mb-2.5"> <span class="text-primary">100</span>+</div>
 
@@ -250,21 +249,21 @@
                 <div class="text-sm text-default-900">What We Do</div>
             </div>
 
-            <div class="grid xl:grid-cols-2 items-center xl:gap-20 gap-12.5 mt-7.5">
+            <div class="mobile-intro grid xl:grid-cols-2 items-center xl:gap-20 gap-12.5 mt-7.5">
                 <div>
-                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Scalable <span class="text-primary">capabilities</span> for <br> every challenge</h1>
+                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Connected <span class="text-primary">capabilities</span> for <br> your requirements</h1>
                 </div>
 
                 <div class="ms-auto">
-                    <a href="services.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
+                    <a href="products.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
                         <!-- TEXT -->
                         <span class="py-3.75 ps-6">
                             <span class="relative block overflow-hidden">
                                 <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Explore Our Capabilities
+                                    Explore Our Products
                                 </span>
                                 <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Explore Our Capabilities
+                                    Explore Our Products
                                 </span>
                             </span>
                         </span>
@@ -287,41 +286,43 @@
             <div class="mt-17.5"></div>
 
             <div class="flex flex-col justify-start items-center">
-                <!-- Service 1 -->
-                <div class="bg-white border-t border-default-300 lg:sticky top-25">
+                <!-- Product 1: Epoxy Components -->
+                <div class="w-full bg-white border-t border-default-300 lg:sticky top-25">
                     <div class="flex py-10 gap-5">
-                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                        <div class="grid flex-1 min-w-0 md:grid-cols-5 lg:gap-10 gap-6">
                             <div class="md:col-span-2">
                                 <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
-                                    <img src="assets/images/service/icon-1.svg" class="size-10">
+                                    <span class="shrink-0 text-primary text-2xl font-semibold" aria-hidden="true">01</span>
                                     <div>
-                                        <img src="assets/images/service/service-1.png" class="rounded">
+                                        <a href="epoxy-components.html" class="block rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                                            <img src="assets/images/accretion-power-products/epoxy components.png" alt="Epoxy Components" width="1659" height="948" loading="lazy" decoding="async" class="rounded w-full aspect-[7/4] object-cover object-center">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="md:col-span-3">
                                 <div class="grid xl:grid-cols-2 gap-4">
-                                    <h2 class="lg:text-3xl md:text-2xl text-xl">Product assembly</h2>
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl"><a href="epoxy-components.html" class="hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Epoxy Components</a></h2>
 
                                     <div>
                                         <div class="text-sm lg:mb-10 mb-4">Features</div>
                                         <div class="space-y-2.5">
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Manual & automated assembly</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Our own facility in India</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Functional testing protocols</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Low- and medium-voltage insulators</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Custom packaging design</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>In-house tooling for custom parts</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Supply chain management</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Switchgear bushings and spouts</div>
                                             </div>
                                         </div>
                                     </div>
@@ -329,47 +330,49 @@
                             </div>
                         </div>
 
-                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                        <a href="epoxy-components.html" aria-label="Explore Epoxy Components" class="shrink-0 size-11 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
                             <i class="iconify tabler--arrow-narrow-right size-6"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-white border-t border-default-300 lg:sticky top-50">
+                <!-- Product 2: Porcelain Products -->
+                <div class="w-full bg-white border-t border-default-300 lg:sticky top-25">
                     <div class="flex py-10 gap-5">
-                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                        <div class="grid flex-1 min-w-0 md:grid-cols-5 lg:gap-10 gap-6">
                             <div class="md:col-span-2">
                                 <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
-                                    <img src="assets/images/service/icon-2.svg" class="size-10">
+                                    <span class="shrink-0 text-primary text-2xl font-semibold" aria-hidden="true">02</span>
                                     <div>
-                                        <img src="assets/images/service/service-2.png" class="rounded">
+                                        <a href="porcelain-products.html" class="block rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                                            <img src="assets/images/accretion-power-products/porcelain product.png" alt="Porcelain Products" width="1659" height="948" loading="lazy" decoding="async" class="rounded w-full aspect-[7/4] object-cover object-center">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="md:col-span-3">
                                 <div class="grid xl:grid-cols-2 gap-4">
-                                    <h2 class="lg:text-3xl md:text-2xl text-xl">Sheet metal fabrication</h2>
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl"><a href="porcelain-products.html" class="hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Porcelain Products</a></h2>
 
                                     <div>
                                         <div class="text-sm lg:mb-10 mb-4">Features</div>
                                         <div class="space-y-2.5">
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Laser cutting up to 1&quot; thickness</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Transmission and distribution insulators</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Press brake forming</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Porcelain standoffs and ceramics</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>TIG / MIG welding services</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Transformer bushings</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Powder coating & finishing</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Outdoor electrical applications</div>
                                             </div>
                                         </div>
                                     </div>
@@ -377,47 +380,49 @@
                             </div>
                         </div>
 
-                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                        <a href="porcelain-products.html" aria-label="Explore Porcelain Products" class="shrink-0 size-11 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
                             <i class="iconify tabler--arrow-narrow-right size-6"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-white border-t border-default-300 lg:sticky top-150">
+                <!-- Product 3: Composite Insulators -->
+                <div class="w-full bg-white border-t border-default-300 lg:sticky top-25">
                     <div class="flex py-10 gap-5">
-                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                        <div class="grid flex-1 min-w-0 md:grid-cols-5 lg:gap-10 gap-6">
                             <div class="md:col-span-2">
                                 <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
-                                    <img src="assets/images/service/icon-3.svg" class="size-10">
+                                    <span class="shrink-0 text-primary text-2xl font-semibold" aria-hidden="true">03</span>
                                     <div>
-                                        <img src="assets/images/service/service-3.png" class="rounded">
+                                        <a href="composite-insulators.html" class="block rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                                            <img src="assets/images/accretion-power-products/composite insulator.png" alt="Composite Insulators" width="1659" height="948" loading="lazy" decoding="async" class="rounded w-full aspect-[7/4] object-cover object-center">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="md:col-span-3">
                                 <div class="grid xl:grid-cols-2 gap-4">
-                                    <h2 class="lg:text-3xl md:text-2xl text-xl">CNC machining services</h2>
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl"><a href="composite-insulators.html" class="hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Composite Insulators</a></h2>
 
                                     <div>
                                         <div class="text-sm lg:mb-10 mb-4">Features</div>
                                         <div class="space-y-2.5">
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>±0.0001&quot; tolerance capability</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Solid core post insulators</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Multi-axis machining centers</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Line post insulators</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Materials: metals, plastics, composites</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Long rod insulators</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Prototype to production volumes</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Railway and metro applications</div>
                                             </div>
                                         </div>
                                     </div>
@@ -425,47 +430,49 @@
                             </div>
                         </div>
 
-                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                        <a href="composite-insulators.html" aria-label="Explore Composite Insulators" class="shrink-0 size-11 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
                             <i class="iconify tabler--arrow-narrow-right size-6"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="bg-white border-t border-default-300 lg:sticky top-200">
+                <!-- Product 4: Copper -->
+                <div class="w-full bg-white border-t border-default-300 lg:sticky top-25">
                     <div class="flex py-10 gap-5">
-                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                        <div class="grid flex-1 min-w-0 md:grid-cols-5 lg:gap-10 gap-6">
                             <div class="md:col-span-2">
                                 <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
-                                    <img src="assets/images/service/icon-4.svg" class="size-10">
+                                    <span class="shrink-0 text-primary text-2xl font-semibold" aria-hidden="true">04</span>
                                     <div>
-                                        <img src="assets/images/service/service-4.png" class="rounded">
+                                        <a href="copper.html" class="block rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                                            <img src="assets/images/accretion-power-products/Copper.png" alt="Copper" width="1659" height="948" loading="lazy" decoding="async" class="rounded w-full aspect-[7/4] object-cover object-center">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="md:col-span-3">
                                 <div class="grid xl:grid-cols-2 gap-4">
-                                    <h2 class="lg:text-3xl md:text-2xl text-xl">Injection molding</h2>
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl"><a href="copper.html" class="hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Copper</a></h2>
 
                                     <div>
                                         <div class="text-sm lg:mb-10 mb-4">Features</div>
                                         <div class="space-y-2.5">
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>50–1000 ton molding machines</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>C110 copper bus bar</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Multi-cavity tooling design</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Custom cutting and milling</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Insert molding capabilities</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Punching and bending</div>
                                             </div>
                                             <div class="flex items-center gap-2">
-                                                <i class="iconify tabler--check size-5 text-primary"></i>
-                                                <div>Cleanroom fabrication unit</div>
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Bare, tin or silver finishes</div>
                                             </div>
                                         </div>
                                     </div>
@@ -473,9 +480,105 @@
                             </div>
                         </div>
 
-                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                        <a href="copper.html" aria-label="Explore Copper" class="shrink-0 size-11 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
                             <i class="iconify tabler--arrow-narrow-right size-6"></i>
-                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5: Bus Boots -->
+                <div class="w-full bg-white border-t border-default-300 lg:sticky top-25">
+                    <div class="flex py-10 gap-5">
+                        <div class="grid flex-1 min-w-0 md:grid-cols-5 lg:gap-10 gap-6">
+                            <div class="md:col-span-2">
+                                <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
+                                    <span class="shrink-0 text-primary text-2xl font-semibold" aria-hidden="true">05</span>
+                                    <div>
+                                        <a href="bus-boots.html" class="block rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                                            <img src="assets/images/accretion-power-products/busboots.png" alt="Bus Boots" width="1086" height="1448" loading="lazy" decoding="async" class="rounded w-full aspect-[7/4] object-cover object-center">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <div class="grid xl:grid-cols-2 gap-4">
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl"><a href="bus-boots.html" class="hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Bus Boots</a></h2>
+
+                                    <div>
+                                        <div class="text-sm lg:mb-10 mb-4">Features</div>
+                                        <div class="space-y-2.5">
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Bus boots for switchgear assemblies</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Application and drawing review</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Configuration support</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="bus-boots.html" aria-label="Explore Bus Boots" class="shrink-0 size-11 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <i class="iconify tabler--arrow-narrow-right size-6"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6: Castings -->
+                <div class="w-full bg-white border-t border-default-300 lg:sticky top-25">
+                    <div class="flex py-10 gap-5">
+                        <div class="grid flex-1 min-w-0 md:grid-cols-5 lg:gap-10 gap-6">
+                            <div class="md:col-span-2">
+                                <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
+                                    <span class="shrink-0 text-primary text-2xl font-semibold" aria-hidden="true">06</span>
+                                    <div>
+                                        <a href="castings.html" class="block rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                                            <img src="assets/images/accretion-power-products/Castings.png" alt="Castings" width="1086" height="1448" loading="lazy" decoding="async" class="rounded w-full aspect-[7/4] object-cover object-center">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <div class="grid xl:grid-cols-2 gap-4">
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl"><a href="castings.html" class="hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">Castings</a></h2>
+
+                                    <div>
+                                        <div class="text-sm lg:mb-10 mb-4">Features</div>
+                                        <div class="space-y-2.5">
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>OEM-specific aluminum castings</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Permanent mold and die casting</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Current-carrying designs</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 shrink-0 text-primary" aria-hidden="true"></i>
+                                                <div>Pressure-retaining designs</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="castings.html" aria-label="Explore Castings" class="shrink-0 size-11 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <i class="iconify tabler--arrow-narrow-right size-6"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -485,9 +588,9 @@
 
     <section class="relative size-full pb-12.5">
         <div class="container">
-            <div class="bg-default-900 lg:p-12 p-6 bg-[url(../images/cta-bg.png)] bg-no-repeat bg-cover rounded">
+            <div class="project-cta-background lg:p-12 p-6 rounded">
                 <div class="flex md:flex-row flex-col md:items-center justify-between gap-6">
-                    <h2 class="lg:text-4xl md:text-3xl text-2xl text-white">Ready to start your <br>Next project?</h2>
+                    <h2 class="lg:text-4xl md:text-3xl text-2xl text-white">Ready to discuss your <br>Next component?</h2>
 
                     <div>
                         <a href="contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
@@ -495,10 +598,10 @@
                             <span class="py-3.75 ps-6">
                                 <span class="relative block overflow-hidden">
                                     <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Schedule Consultation
+                                        Discuss Your Project
                                     </span>
                                     <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                        Schedule Consultation
+                                        Discuss Your Project
                                     </span>
                                 </span>
                             </span>
@@ -525,7 +628,7 @@
     <section class="relative size-full">
 
         <div class="xl:h-175 w-full h-full relative overflow-hidden">
-            <div class="bg-[url(../images/about/vector.webp)] bg-no-repeat bg-cover bg-position-[50%] absolute top-21.5 -start-[5%] w-[130%] xl:h-175 h-150 overflow-hidden filter-[blur(30px)]"></div>
+            <div class="bg-[url(../images/about/vector.svg)] bg-no-repeat bg-cover bg-position-[50%] absolute top-21.5 -start-[5%] w-[130%] xl:h-175 h-150 overflow-hidden filter-[blur(30px)]"></div>
         </div>
 
         <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 z-1">
@@ -542,7 +645,7 @@
 
                     <div class="inline-flex items-center gap-7.5 rounded-2xl py-1.25 px-3.5 bg-default-950 border border-default-800">
                         <div class="size-2 bg-primary"></div>
-                        <div class="text-sm text-default-100">What we manufacture</div>
+                        <div class="text-sm text-default-100">Components we supply</div>
                     </div>
 
                     <div class="ms-auto">
@@ -551,120 +654,173 @@
                     </div>
                 </div>
 
-                <img src="assets/images/products/prototype.svg" alt="Product Info Image" class="size-full">
+                <img src="assets/images/accretion-power-products/components-lineup-transparent.png" alt="Six electrical power components lineup" class="size-full">
             </div>
 
             <div class="container-full py-25 relative z-10">
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-7.5" data-toggle="gallery">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4" data-toggle="gallery">
 
-                    <!-- Product 1 -->
-                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
-                        <h3 class="text-2xl text-white mb-5">Aluminum Gear Housing</h3>
-                        <a href="assets/images/products/product-1.png">
-                            <img src="assets/images/products/product-1.png" alt="" class="rounded-md mb-7.5">
+                    <!-- Component card 1: Epoxy Components -->
+                    <div class="min-w-0 flex flex-col bg-default-900 border border-default-700 rounded py-5 px-4">
+                        <h3 class="text-lg leading-tight text-white mb-4 min-h-11">Epoxy Components</h3>
+                        <a href="assets/images/accretion-power-products/epoxy components.png" aria-label="Enlarge Epoxy Components image" class="block rounded-md mb-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <img src="assets/images/accretion-power-products/epoxy components.png" alt="Epoxy Components" loading="lazy" decoding="async" class="rounded-md w-full aspect-[7/4] object-cover object-center">
                         </a>
 
-                        <p class="mb-7.5 text-default-400">
-                            Precision CNC machined aluminum housings for gear systems and machinery.
+                        <p class="mb-5 text-sm leading-relaxed text-default-400">
+                            Post insulators and bushings for switchgear, with custom in-house tooling.
                         </p>
 
-                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
-                            <div>
-                                <div class="text-default-400 text-sm">Material</div>
-                                <div class="text-white text-sm">Aluminum 6061 / 7075</div>
+                        <div class="mt-auto divide-y divide-default-700">
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Material</div>
+                                <div class="text-white text-xs">Cast epoxy resin</div>
                             </div>
-                            <div>
-                                <div class="text-default-400 text-sm">Capability</div>
-                                <div class="text-white text-sm">CNC Machining</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Capability</div>
+                                <div class="text-white text-xs">In-house tooling</div>
                             </div>
-                            <div class="pb-0!">
-                                <div class="text-default-400 text-sm">Size Range</div>
-                                <div class="text-white text-sm">Custom dimensions up to 500mm</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3 pb-0">
+                                <div class="text-default-400 text-xs">Requirements</div>
+                                <div class="text-white text-xs">Standard and custom designs</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Product 2 -->
-                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
-                        <h3 class="text-2xl text-white mb-5">Custom Plastic Enclosures</h3>
-                        <a href="assets/images/products/product-2.png">
-                            <img src="assets/images/products/product-2.png" alt="" class="rounded-md mb-7.5">
+                    <!-- Component card 2: Porcelain Products -->
+                    <div class="min-w-0 flex flex-col bg-default-900 border border-default-700 rounded py-5 px-4">
+                        <h3 class="text-lg leading-tight text-white mb-4 min-h-11">Porcelain Products</h3>
+                        <a href="assets/images/accretion-power-products/porcelain product.png" aria-label="Enlarge Porcelain Products image" class="block rounded-md mb-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <img src="assets/images/accretion-power-products/porcelain product.png" alt="Porcelain Products" loading="lazy" decoding="async" class="rounded-md w-full aspect-[7/4] object-cover object-center">
                         </a>
 
-                        <p class="mb-7.5 text-default-400">
-                            Injection molded enclosures for electronics and telecom applications.
+                        <p class="mb-5 text-sm leading-relaxed text-default-400">
+                            Porcelain insulators and bushings for transmission and distribution.
                         </p>
 
-                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
-                            <div>
-                                <div class="text-default-400 text-sm">Material</div>
-                                <div class="text-white text-sm">ABS, Polycarbonate, Nylon</div>
+                        <div class="mt-auto divide-y divide-default-700">
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Material</div>
+                                <div class="text-white text-xs">Porcelain</div>
                             </div>
-                            <div>
-                                <div class="text-default-400 text-sm">Capability</div>
-                                <div class="text-white text-sm">Injection Molding</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Capability</div>
+                                <div class="text-white text-xs">Component sourcing</div>
                             </div>
-                            <div class="pb-0!">
-                                <div class="text-default-400 text-sm">Size Range</div>
-                                <div class="text-white text-sm">Varies – custom moldable</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3 pb-0">
+                                <div class="text-default-400 text-xs">Requirements</div>
+                                <div class="text-white text-xs">For your application</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Product 3 -->
-                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
-                        <h3 class="text-2xl text-white mb-5">Electrical Control Panels</h3>
-                        <a href="assets/images/products/product-3.png">
-                            <img src="assets/images/products/product-3.png" alt="" class="rounded-md mb-7.5">
+                    <!-- Component card 3: Composite Insulators -->
+                    <div class="min-w-0 flex flex-col bg-default-900 border border-default-700 rounded py-5 px-4">
+                        <h3 class="text-lg leading-tight text-white mb-4 min-h-11">Composite Insulators</h3>
+                        <a href="assets/images/accretion-power-products/composite insulator.png" aria-label="Enlarge Composite Insulators image" class="block rounded-md mb-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <img src="assets/images/accretion-power-products/composite insulator.png" alt="Composite Insulators" loading="lazy" decoding="async" class="rounded-md w-full aspect-[7/4] object-cover object-center">
                         </a>
 
-                        <p class="mb-7.5 text-default-400">
-                            Weather-resistant control panels for industrial automation systems.
+                        <p class="mb-5 text-sm leading-relaxed text-default-400">
+                            Composite insulators for transmission, railway, and metro applications.
                         </p>
 
-                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
-                            <div>
-                                <div class="text-default-400 text-sm">Material</div>
-                                <div class="text-white text-sm">Mild Steel, Stainless Steel</div>
+                        <div class="mt-auto divide-y divide-default-700">
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Products</div>
+                                <div class="text-white text-xs">Post and line insulators</div>
                             </div>
-                            <div>
-                                <div class="text-default-400 text-sm">Capability</div>
-                                <div class="text-white text-sm">Sheet Metal Fabrication & Assembly</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Capability</div>
+                                <div class="text-white text-xs">Component sourcing</div>
                             </div>
-                            <div class="pb-0!">
-                                <div class="text-default-400 text-sm">Size Range</div>
-                                <div class="text-white text-sm">Small to full-scale cabinets</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3 pb-0">
+                                <div class="text-default-400 text-xs">Requirements</div>
+                                <div class="text-white text-xs">For your application</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Product 4 -->
-                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
-                        <h3 class="text-2xl text-white mb-5">Precision Shaft Assemblies</h3>
-                        <a href="assets/images/products/product-4.png">
-                            <img src="assets/images/products/product-4.png" alt="" class="rounded-md mb-7.5">
+                    <!-- Component card 4: Copper -->
+                    <div class="min-w-0 flex flex-col bg-default-900 border border-default-700 rounded py-5 px-4">
+                        <h3 class="text-lg leading-tight text-white mb-4 min-h-11">Copper</h3>
+                        <a href="assets/images/accretion-power-products/Copper.png" aria-label="Enlarge Copper image" class="block rounded-md mb-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <img src="assets/images/accretion-power-products/Copper.png" alt="Copper" loading="lazy" decoding="async" class="rounded-md w-full aspect-[7/4] object-cover object-center">
                         </a>
 
-                        <p class="mb-7.5 text-default-400">
-                            High-precision steel shafts for automotive and industrial equipment.
+                        <p class="mb-5 text-sm leading-relaxed text-default-400">
+                            C110 copper bus bar with custom fabrication and bare or plated finishes.
                         </p>
 
-                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
-                            <div>
-                                <div class="text-default-400 text-sm">Material</div>
-                                <div class="text-white text-sm">Alloy Steel, Stainless Steel</div>
+                        <div class="mt-auto divide-y divide-default-700">
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Material</div>
+                                <div class="text-white text-xs">C110 copper</div>
                             </div>
-                            <div>
-                                <div class="text-default-400 text-sm">Capability</div>
-                                <div class="text-white text-sm">Turning & Grinding</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Capability</div>
+                                <div class="text-white text-xs">Custom fabrication</div>
                             </div>
-                            <div class="pb-0!">
-                                <div class="text-default-400 text-sm">Size Range</div>
-                                <div class="text-white text-sm">Up to 1200mm</div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3 pb-0">
+                                <div class="text-default-400 text-xs">Requirements</div>
+                                <div class="text-white text-xs">To your drawing</div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Component card 5: Bus Boots -->
+                    <div class="min-w-0 flex flex-col bg-default-900 border border-default-700 rounded py-5 px-4">
+                        <h3 class="text-lg leading-tight text-white mb-4 min-h-11">Bus Boots</h3>
+                        <a href="assets/images/accretion-power-products/busboots.png" aria-label="Enlarge Bus Boots image" class="block rounded-md mb-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <img src="assets/images/accretion-power-products/busboots.png" alt="Bus Boots" loading="lazy" decoding="async" class="rounded-md w-full aspect-[7/4] object-cover object-center">
+                        </a>
+
+                        <p class="mb-5 text-sm leading-relaxed text-default-400">
+                            Bus boots for switchgear assemblies, matched to your application.
+                        </p>
+
+                        <div class="mt-auto divide-y divide-default-700">
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Application</div>
+                                <div class="text-white text-xs">Switchgear assemblies</div>
+                            </div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Support</div>
+                                <div class="text-white text-xs">Configuration review</div>
+                            </div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3 pb-0">
+                                <div class="text-default-400 text-xs">Requirements</div>
+                                <div class="text-white text-xs">Share your drawings</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Component card 6: Castings -->
+                    <div class="min-w-0 flex flex-col bg-default-900 border border-default-700 rounded py-5 px-4">
+                        <h3 class="text-lg leading-tight text-white mb-4 min-h-11">Castings</h3>
+                        <a href="assets/images/accretion-power-products/Castings.png" aria-label="Enlarge Castings image" class="block rounded-md mb-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                            <img src="assets/images/accretion-power-products/Castings.png" alt="Castings" loading="lazy" decoding="async" class="rounded-md w-full aspect-[7/4] object-cover object-center">
+                        </a>
+
+                        <p class="mb-5 text-sm leading-relaxed text-default-400">
+                            Aluminum castings for electrical applications, made to OEM requirements.
+                        </p>
+
+                        <div class="mt-auto divide-y divide-default-700">
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Material</div>
+                                <div class="text-white text-xs">A356-T6 aluminum</div>
+                            </div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3">
+                                <div class="text-default-400 text-xs">Capability</div>
+                                <div class="text-white text-xs">Mold / die casting</div>
+                            </div>
+                            <div class="flex flex-wrap items-start justify-between gap-x-2 gap-y-1 py-3 pb-0">
+                                <div class="text-default-400 text-xs">Requirements</div>
+                                <div class="text-white text-xs">OEM specifications</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -672,7 +828,7 @@
             <div class="container md:pb-25 pb-20 relative z-10">
                 <div class="flex lg:flex-row flex-col lg:items-center items-start gap-7.5 mt-7.5">
 
-                    <h3 class="lg:text-[42px] md:text-[34px] text-[28px] text-white">Explore our complete product range across industries.</h3>
+                    <h3 class="lg:text-[42px] md:text-[34px] text-[28px] text-white">Electrical components for utilities and global OEMs.</h3>
 
                     <div class="grow flex flex-wrap gap-4 whitespace-nowrap">
                         <a href="#" target="_blank" class="text-white underline transition-all hover:decoration-transparent flex items-center">
@@ -719,7 +875,7 @@
                 <div class="text-sm text-default-900">Real-world success</div>
             </div>
 
-            <div class="grid grid-cols-2 items-end gap-12.5 mt-7.5 mb-12.5">
+            <div class="mobile-intro grid grid-cols-2 items-end gap-12.5 mt-7.5 mb-12.5">
                 <div>
                     <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Real <span class="text-primary">results</span> from real <br> projects</h1>
                 </div>
@@ -1038,14 +1194,11 @@
 
             <div class="grid lg:grid-cols-2 gap-12.5">
                 <div class="flex flex-wrap items-center lg:gap-5 gap-3">
-                    <div class="flex -space-x-5">
-                        <img src="assets/images/user/avatar-1.png" alt="" class="size-16 border-2 border-white rounded-full">
-                        <img src="assets/images/user/avatar-2.png" alt="" class="size-16 border-2 border-white rounded-full">
-                    </div>
+                    <img src="assets/images/benvietmeir.png" alt="Ben Veitmeier, Founder and President" width="1444" height="1089" loading="lazy" class="size-20 shrink-0 border-2 border-white rounded-full object-cover object-top">
 
                     <div>
-                        <h3 class="lg:text-[28px] text-2xl mb-2.5">Need some help?</h3>
-                        <p>We're here to provide support and assistance.</p>
+                        <h3 class="lg:text-[28px] text-2xl mb-2.5">Contact Ben Veitmeier</h3>
+                        <p>Founder and President · <a href="tel:+14125106454" class="whitespace-nowrap hover:text-primary-hover underline underline-offset-4">+1 412 510 6454</a></p>
                     </div>
                 </div>
 
@@ -1055,10 +1208,10 @@
                         <span class="py-3.75 ps-6">
                             <span class="relative block overflow-hidden">
                                 <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Contact us Now
+                                    Contact Us
                                 </span>
                                 <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                    Contact us Now
+                                    Contact Us
                                 </span>
                             </span>
                         </span>
@@ -1120,37 +1273,37 @@
 
         <div class="container">
             <div class="bg-default-900/50 rounded-md border border-white/10 [backdrop-filter:blur(5px)] max-w-132 lg:p-12.5 md:p-7.5 p-6">
-                <h2 class="lg:text-[32px] md:text-[28px] text-2xl text-white mb-7.5">Manufacturing solutions you can count on</h2>
+                <h2 class="lg:text-[32px] md:text-[28px] text-2xl text-white mb-7.5">Electrical components. Personal service.</h2>
 
                 <div class="space-y-2.5  mb-7.5">
                     <div class="flex items-center gap-2">
                         <i class="iconify tabler--check flex size-6 text-primary"></i>
-                        <p class="text-default-200">Decades of experience</p>
+                        <p class="text-default-200">Switchgear experience</p>
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="iconify tabler--check flex size-6 text-primary"></i>
-                        <p class="text-default-200">Certified quality assurance</p>
+                        <p class="text-default-200">In-house epoxy manufacturing</p>
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="iconify tabler--check flex size-6 text-primary"></i>
-                        <p class="text-default-200">On-time delivery</p>
+                        <p class="text-default-200">Locally managed inventory</p>
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="iconify tabler--check flex size-6 text-primary"></i>
-                        <p class="text-default-200">End-to-end solutions</p>
+                        <p class="text-default-200">Custom copper fabrication</p>
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="iconify tabler--check flex size-6 text-primary"></i>
-                        <p class="text-default-200">Advanced technology</p>
+                        <p class="text-default-200">Drawing and 3D model support</p>
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="iconify tabler--check flex size-6 text-primary"></i>
-                        <p class="text-default-200">Customer-centric spproach</p>
+                        <p class="text-default-200">Direct, personal communication</p>
                     </div>
                 </div>
 
                 <div class="mb-7.5">
-                    <a href="services.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-primary text-base font-medium text-white transition-all">
+                    <a href="products.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-primary text-base font-medium text-white transition-all">
                         <!-- TEXT -->
                         <span class="py-3.75 ps-6">
                             <span class="relative block overflow-hidden">
@@ -1179,10 +1332,10 @@
 
                 <div class="flex flex-wrap items-center gap-3">
                     <div class="flex -space-x-4.5">
-                        <img src="assets/images/user/avatar-2.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
-                        <img src="assets/images/user/avatar-3.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
-                        <img src="assets/images/user/avatar-4.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
-                        <img src="assets/images/user/avatar-1.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/daniel-mercer.png" alt="Illustrative portrait of Daniel Mercer" loading="lazy" class="size-12.5 shrink-0 object-cover p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/rachel-bennett.png" alt="Illustrative portrait of Rachel Bennett" loading="lazy" class="size-12.5 shrink-0 object-cover p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/michael-chen.png" alt="Illustrative portrait of Michael Chen" loading="lazy" class="size-12.5 shrink-0 object-cover p-0.5 bg-white rounded-md">
+                        <img src="assets/images/testimonial-preview/elena-ramirez.png" alt="Illustrative portrait of Elena Ramirez" loading="lazy" class="size-12.5 shrink-0 object-cover p-0.5 bg-white rounded-md">
                     </div>
                     <div>
                         <div class="flex gap-1.5 mb-2">
@@ -1200,7 +1353,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="relative size-full lg:py-50 md:py-25 py-20">
+    <section id="built-on-trust" class="relative size-full lg:py-50 md:py-25 py-20">
         <div class="container-full">
             <div class="text-center mb-12.5">
                 <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
@@ -1208,6 +1361,7 @@
                     <div class="text-sm text-default-900">Built on trust</div>
                 </div>
                 <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Trusted by <span class="text-primary">clients</span>, proven <br> by results</h1>
+                <p class="mt-4 text-sm text-default-600">Illustrative testimonials: names, roles, and reviews are fictional; portraits are AI-generated.</p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-7.5">
@@ -1215,150 +1369,122 @@
 
                     <!-- Tab Nav -->
                     <div class="min-w-26 p-5 flex items-center justify-center rounded-md bg-default-950">
-                        <nav class="flex md:flex-col flex-row flex-wrap justify-center gap-4" role="tablist" aria-orientation="vertical">
-
-                            <!-- Tab 1 -->
-                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full active" id="tab-1" aria-selected="true" data-hs-tab="#tab-content-1" role="tab">
-                                <img src="assets/images/user/avatar-1.png" class="size-15 rounded-full">
+                        <nav class="flex md:flex-col flex-row flex-wrap justify-center gap-4" role="tablist" aria-label="Client testimonials">
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full active" id="tab-1" aria-selected="true" aria-controls="tab-content-1" aria-label="Read Daniel Mercer’s review" data-hs-tab="#tab-content-1" role="tab">
+                                <img src="assets/images/testimonial-preview/daniel-mercer.png" alt="" width="1254" height="1254" loading="lazy" class="size-15 rounded-full object-cover">
                             </button>
-
-                            <!-- Tab 2 -->
-                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-2" aria-selected="false" data-hs-tab="#tab-content-2" role="tab">
-                                <img src="assets/images/user/avatar-2.png" class="size-15 rounded-full">
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-2" aria-selected="false" aria-controls="tab-content-2" aria-label="Read Rachel Bennett’s review" data-hs-tab="#tab-content-2" role="tab">
+                                <img src="assets/images/testimonial-preview/rachel-bennett.png" alt="" width="1254" height="1254" loading="lazy" class="size-15 rounded-full object-cover">
                             </button>
-
-                            <!-- Tab 3 -->
-                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-3" aria-selected="false" data-hs-tab="#tab-content-3" role="tab">
-                                <img src="assets/images/user/avatar-3.png" class="size-15 rounded-full">
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-3" aria-selected="false" aria-controls="tab-content-3" aria-label="Read Michael Chen’s review" data-hs-tab="#tab-content-3" role="tab">
+                                <img src="assets/images/testimonial-preview/michael-chen.png" alt="" width="1254" height="1254" loading="lazy" class="size-15 rounded-full object-cover">
                             </button>
-
-                            <!-- Tab 4 -->
-                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-4" aria-selected="false" data-hs-tab="#tab-content-4" role="tab">
-                                <img src="assets/images/user/avatar-4.png" class="size-15 rounded-full">
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-4" aria-selected="false" aria-controls="tab-content-4" aria-label="Read Elena Ramirez’s review" data-hs-tab="#tab-content-4" role="tab">
+                                <img src="assets/images/testimonial-preview/elena-ramirez.png" alt="" width="1254" height="1254" loading="lazy" class="size-15 rounded-full object-cover">
                             </button>
-
-                            <!-- Tab 5 -->
-                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-5" aria-selected="false" data-hs-tab="#tab-content-5" role="tab">
-                                <img src="assets/images/user/avatar-5.png" class="size-15 rounded-full">
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-5" aria-selected="false" aria-controls="tab-content-5" aria-label="Read James Whitaker’s review" data-hs-tab="#tab-content-5" role="tab">
+                                <img src="assets/images/testimonial-preview/james-whitaker.png" alt="" width="1254" height="1254" loading="lazy" class="size-15 rounded-full object-cover">
                             </button>
-
                         </nav>
                     </div>
                     <!-- End Tab Nav -->
-
                     <!-- Tab Content -->
-                    <div class="w-full rounded-md bg-default-100 p-10">
-
-                        <!-- Content 1 -->
-                        <div id="tab-content-1" class="h-full" role="tabpanel" aria-labelledby="tab-1">
-                            <div class="flex h-full flex-col">
-                                <div class="mb-5 flex gap-1.5">
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                    <div class="w-full min-w-0 rounded-md bg-default-100 p-6 lg:p-10">
+                        <div id="tab-content-1" class="h-full" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+                            <div class="flex min-h-96 h-full flex-col">
+                                <div class="mb-6 flex gap-1.5" aria-label="5 out of 5 stars">
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
                                 </div>
-
-                                <p class="text-default-900">
-                                    The team's dedication and innovative approach transformed our ideas into reality. Every stage of the project was handled with care and expertise.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Emily Carter</h3>
-                                    <div class="text-sm text-default-600">Product Designer</div>
+                                <blockquote class="text-default-900 text-lg leading-relaxed mb-8">“Ben gave us a clear point of contact from the first enquiry through the final specification. Having our component requirements and purchasing questions handled together made the process easier for our team.”</blockquote>
+                                <div class="mt-auto flex flex-wrap items-center gap-4">
+                                    <img src="assets/images/testimonial-preview/daniel-mercer.png" alt="" width="1254" height="1254" loading="lazy" class="size-20 shrink-0 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="text-2xl lg:text-[28px] mb-2.5">Daniel Mercer</h3>
+                                        <div class="text-sm text-default-600">Utility Procurement Manager</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Content 2 -->
-                        <div id="tab-content-2" class="hidden h-full" role="tabpanel" aria-labelledby="tab-2">
-                            <div class="flex h-full flex-col">
-                                <div class="mb-5 flex gap-1.5">
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                        <div id="tab-content-2" class="hidden h-full" role="tabpanel" aria-labelledby="tab-2" tabindex="0">
+                            <div class="flex min-h-96 h-full flex-col">
+                                <div class="mb-6 flex gap-1.5" aria-label="5 out of 5 stars">
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
                                 </div>
-
-                                <p class="text-default-900">
-                                    The precision and efficiency they demonstrated made the entire process effortless. I highly recommend them for any technical project.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Liam Thompson</h3>
-                                    <div class="text-sm text-default-600">Operations Manager</div>
+                                <blockquote class="text-default-900 text-lg leading-relaxed mb-8">“Our epoxy component needed a few drawing revisions before we could move forward. The team worked through the mounting details with us and kept the technical discussion clear and practical.”</blockquote>
+                                <div class="mt-auto flex flex-wrap items-center gap-4">
+                                    <img src="assets/images/testimonial-preview/rachel-bennett.png" alt="" width="1254" height="1254" loading="lazy" class="size-20 shrink-0 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="text-2xl lg:text-[28px] mb-2.5">Rachel Bennett</h3>
+                                        <div class="text-sm text-default-600">Switchgear Engineering Manager</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Content 3 -->
-                        <div id="tab-content-3" class="hidden h-full" role="tabpanel" aria-labelledby="tab-3">
-                            <div class="flex h-full flex-col">
-                                <div class="mb-5 flex gap-1.5">
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                        <div id="tab-content-3" class="hidden h-full" role="tabpanel" aria-labelledby="tab-3" tabindex="0">
+                            <div class="flex min-h-96 h-full flex-col">
+                                <div class="mb-6 flex gap-1.5" aria-label="5 out of 5 stars">
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
                                 </div>
-
-                                <p class="text-default-900">
-                                    Their precision engineering and attention to detail exceeded our expectations. From prototyping to delivery, the entire process was seamless.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">John Matthews</h3>
-                                    <div class="text-sm text-default-600">Procurement Manager</div>
+                                <blockquote class="text-default-900 text-lg leading-relaxed mb-8">“We needed copper bus bar fabricated to fit an existing assembly. Reviewing the bend details, hole patterns, and finish up front helped us keep engineering and production on the same page.”</blockquote>
+                                <div class="mt-auto flex flex-wrap items-center gap-4">
+                                    <img src="assets/images/testimonial-preview/michael-chen.png" alt="" width="1254" height="1254" loading="lazy" class="size-20 shrink-0 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="text-2xl lg:text-[28px] mb-2.5">Michael Chen</h3>
+                                        <div class="text-sm text-default-600">Manufacturing Operations Director</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Content 4 -->
-                        <div id="tab-content-4" class="hidden h-full" role="tabpanel" aria-labelledby="tab-4">
-                            <div class="flex h-full flex-col">
-                                <div class="mb-5 flex gap-1.5">
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                        <div id="tab-content-4" class="hidden h-full" role="tabpanel" aria-labelledby="tab-4" tabindex="0">
+                            <div class="flex min-h-96 h-full flex-col">
+                                <div class="mb-6 flex gap-1.5" aria-label="5 out of 5 stars">
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
                                 </div>
-
-                                <p class="text-default-900">
-                                    I was impressed by their professionalism and attention to detail. Communication was clear, and the final product exceeded expectations.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Sofia Ramirez</h3>
-                                    <div class="text-sm text-default-600">Marketing Lead at BrightWave Tech</div>
+                                <blockquote class="text-default-900 text-lg leading-relaxed mb-8">“We came in with an application requirement rather than a final part number. Accretion Power helped us work through the porcelain and composite options and identify what needed to be confirmed before ordering.”</blockquote>
+                                <div class="mt-auto flex flex-wrap items-center gap-4">
+                                    <img src="assets/images/testimonial-preview/elena-ramirez.png" alt="" width="1254" height="1254" loading="lazy" class="size-20 shrink-0 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="text-2xl lg:text-[28px] mb-2.5">Elena Ramirez</h3>
+                                        <div class="text-sm text-default-600">Electrical Design Lead</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Content 5 -->
-                        <div id="tab-content-5" class="hidden h-full" role="tabpanel" aria-labelledby="tab-5">
-                            <div class="flex h-full flex-col">
-                                <div class="mb-5 flex gap-1.5">
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
-                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                        <div id="tab-content-5" class="hidden h-full" role="tabpanel" aria-labelledby="tab-5" tabindex="0">
+                            <div class="flex min-h-96 h-full flex-col">
+                                <div class="mb-6 flex gap-1.5" aria-label="5 out of 5 stars">
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary" aria-hidden="true"></i>
                                 </div>
-
-                                <p class="text-default-900">
-                                    The level of professionalism and commitment to quality was exceptional. Every detail was meticulously handled.
-                                </p>
-
-                                <div class="mt-auto">
-                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Ethan Brooks</h3>
-                                    <div class="text-sm text-default-600">Project Coordinator at Stellar Industries</div>
+                                <blockquote class="text-default-900 text-lg leading-relaxed mb-8">“Clear communication matters when several component requirements are moving at once. Ben kept the conversation focused on our drawings, quantities, and schedule, so we always knew what the next step was.”</blockquote>
+                                <div class="mt-auto flex flex-wrap items-center gap-4">
+                                    <img src="assets/images/testimonial-preview/james-whitaker.png" alt="" width="1254" height="1254" loading="lazy" class="size-20 shrink-0 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="text-2xl lg:text-[28px] mb-2.5">James Whitaker</h3>
+                                        <div class="text-sm text-default-600">Substation Project Manager</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <!-- End Tab Content -->
                 </div>
@@ -1370,8 +1496,8 @@
                             <div class="bg-default-900/60 absolute inset-0 z-1"></div>
 
                             <div class="relative text-center z-10">
-                                <div class="text-sm text-white mb-2">// 2005-2K25 //</div>
-                                <img src="assets/images/logo-light.svg" alt="" class="h-5">
+                                <div class="text-sm text-white mb-2">// 2023-2K25 //</div>
+                                <img src="assets/images/logo-light.svg" alt="ACCRETION POWER" class="h-5">
                             </div>
                         </div>
 
@@ -1395,25 +1521,16 @@
                             <img src="assets/images/contact-use-icon.svg" alt="" class="h-12.5">
 
                             <div>
-                                <h3 class="lg:text-[28px] text-2xl text-white mb-5">Need help choosing the right product?</h3>
-                                <p class="text-white">Always ready with guidance, product details, and after-sales support.</p>
+                                <h3 class="lg:text-[28px] text-2xl text-white mb-5">Have a drawing or component question?</h3>
+                                <p class="text-white">Share your part list, drawings, quantities, and timing with our team.</p>
                             </div>
 
-                            <a href="contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                            <a href="contact.html" class="group inline-flex max-w-full items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
                                 <!-- TEXT -->
-                                <span class="py-3.75 ps-6">
-                                    <span class="relative block overflow-hidden">
-                                        <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                            Contact Support
-                                        </span>
-                                        <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
-                                            Contact Support
-                                        </span>
-                                    </span>
-                                </span>
+                                <span class="min-w-0 py-3.75 ps-6 leading-snug">Discuss Your Needs</span>
 
                                 <!-- ICON -->
-                                <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                <span class="m-1.25 flex size-10 shrink-0 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
                                     <span class="relative block overflow-hidden">
                                         <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
                                             <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
@@ -1436,7 +1553,7 @@
         <div class="container">
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
-                <div class="lg:col-span-1 md:col-span-2">
+                <div class="mobile-intro lg:col-span-1 md:col-span-2">
                     <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
                         <div class="size-2 bg-primary"></div>
                         <div class="text-sm text-default-900">Insights & Article</div>
@@ -1499,7 +1616,7 @@
         </div>
     </section>
 
-    {{> footer }}
+    {{> home-footer }}
 
 </body>
 

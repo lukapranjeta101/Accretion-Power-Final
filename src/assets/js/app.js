@@ -7,18 +7,21 @@ Email: mostafaakajdid6@gmail.com
 File: App js
 */
 
-// CSS File Import
-import "../css/style.css";
-
-
 // Preline Plugin File Import
-import "preline";
+import { HSStaticMethods } from "preline";
 
 
 import './components/gallary';
 import './components/animation';
 import './components/video-play';
 import './components/swiper';
+import './components/contact-enquiry';
+
+// Preline components (dropdowns, the mobile menu overlay, accordions, etc.)
+// are only defined by the import above; they must be explicitly initialized.
+document.addEventListener("DOMContentLoaded", () => {
+    HSStaticMethods.autoInit()
+})
 
 var stickyNav = document.querySelector(".nav-sticky")
 
@@ -42,8 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const href = link.getAttribute("href")?.replace(/\/$/, "")
         if (!href) return
 
-        if (currentPath === href || currentPath.endsWith(href)) {
+        if (currentPath === href || currentPath.endsWith(href) || document.body.dataset.navSection === href) {
             link.classList.add("active")
+            link.setAttribute("aria-current", "page")
         }
     })
 })
@@ -52,12 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const currentPath = window.location.pathname.replace(/\/$/, "")
 
-    document.querySelectorAll("#offcanvasSidebar ul a[href]").forEach((link) => {
+    document.querySelectorAll("#mobile-menu a[href]").forEach((link) => {
         const href = link.getAttribute("href")?.replace(/\/$/, "")
         if (!href) return
 
-        if (currentPath === href || currentPath.endsWith(href)) {
+        if (currentPath === href || currentPath.endsWith(href) || document.body.dataset.navSection === href) {
             link.classList.add("active")
+            link.setAttribute("aria-current", "page")
         }
     })
 })

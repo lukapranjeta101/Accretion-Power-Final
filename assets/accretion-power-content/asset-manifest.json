@@ -1,0 +1,348 @@
+{
+  "extracted_on": "2026-10-28",
+  "scope": "Current repository working-tree content; photo includes existing photorealistic category illustrations with provenance qualifications. No images altered.",
+  "assets": [
+    {
+      "exported_relative_filename": "photos/epoxy-components.jpg",
+      "original_source": "frontend/public/images/epoxycomponents.jpg",
+      "existing_alt_text": [
+        "",
+        "Epoxy components",
+        "Epoxy Components"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/",
+        "/products/epoxy-components",
+        "/datasheets",
+        "/products"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/datasheets/datasheets-page.tsx",
+        "frontend/src/features/home/products.ts",
+        "frontend/src/features/products/content.ts",
+        "frontend/src/features/products/products-page.tsx (dynamic family.image)",
+        "frontend/src/features/products/product-detail-page.tsx (dynamic product.image)",
+        "frontend/src/features/home/product-showcase.tsx (dynamic product.image)",
+        "frontend/src/features/portal/catalog.ts (data reference only; no current rendered image consumer found)"
+      ],
+      "business_subject": "Epoxy Components",
+      "dimensions": {
+        "width": 2600,
+        "height": 1220
+      },
+      "asset_type": "photo",
+      "uncertainty": "Representative category image; no exact model inferred.",
+      "sha256": "8fed7a4fc701aadb9b64ca0b67f01d06fe03918d79016bc85dab5e4ce772a813"
+    },
+    {
+      "exported_relative_filename": "photos/porcelain-products.png",
+      "original_source": "frontend/public/images/Porcelainproducts.png",
+      "existing_alt_text": [
+        "",
+        "Porcelain products",
+        "Porcelain Products"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/",
+        "/products/porcelain-products",
+        "/datasheets",
+        "/products"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/datasheets/datasheets-page.tsx",
+        "frontend/src/features/home/products.ts",
+        "frontend/src/features/products/content.ts",
+        "frontend/src/features/products/products-page.tsx (dynamic family.image)",
+        "frontend/src/features/products/product-detail-page.tsx (dynamic product.image)",
+        "frontend/src/features/home/product-showcase.tsx (dynamic product.image)",
+        "frontend/src/features/portal/catalog.ts (data reference only; no current rendered image consumer found)"
+      ],
+      "business_subject": "Porcelain Products",
+      "dimensions": {
+        "width": 1168,
+        "height": 880
+      },
+      "asset_type": "photo",
+      "uncertainty": "Representative category image; photo/render provenance not individually documented.",
+      "sha256": "4aca3dfe4088ec72350117a91e3c280baa29e703433bb5f2ea89703bfeabb588"
+    },
+    {
+      "exported_relative_filename": "photos/composite-insulators.png",
+      "original_source": "frontend/public/images/compositeinsulator.png",
+      "existing_alt_text": [
+        "",
+        "Composite insulators",
+        "Composite Insulators"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/",
+        "/products/composite-insulators",
+        "/products"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/home/products.ts",
+        "frontend/src/features/products/content.ts",
+        "frontend/src/features/products/products-page.tsx (dynamic family.image)",
+        "frontend/src/features/products/product-detail-page.tsx (dynamic product.image)",
+        "frontend/src/features/home/product-showcase.tsx (dynamic product.image)",
+        "frontend/src/features/portal/catalog.ts (data reference only; no current rendered image consumer found)"
+      ],
+      "business_subject": "Composite Insulators",
+      "dimensions": {
+        "width": 1168,
+        "height": 880
+      },
+      "asset_type": "photo",
+      "uncertainty": "Representative category image; no exact model inferred.",
+      "sha256": "05536a7e85b4b8287c9041dcb079bd05d53fa6b64f4dc5a33fe01eea9655383c"
+    },
+    {
+      "exported_relative_filename": "photos/copper-bus-bar.png",
+      "original_source": "frontend/public/images/copper.png",
+      "existing_alt_text": [
+        "Copper"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/products",
+        "/products/copper",
+        "/products"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/products/content.ts",
+        "frontend/src/features/products/products-page.tsx (dynamic family.image)",
+        "frontend/src/features/products/product-detail-page.tsx (dynamic product.image)",
+        "frontend/src/features/portal/catalog.ts (data reference only; no current rendered image consumer found)"
+      ],
+      "business_subject": "Copper",
+      "dimensions": {
+        "width": 900,
+        "height": 366
+      },
+      "asset_type": "photo",
+      "uncertainty": "Exact product configuration is not established by the image.",
+      "sha256": "b64f6e7391460ceab8ebbd9a13b95809c9245c85121d7a2348501096b7f6d5a7"
+    },
+    {
+      "exported_relative_filename": "photos/copper-bus-bar-ai-studio.png",
+      "original_source": "frontend/public/images/copper-studio.png",
+      "existing_alt_text": [
+        "",
+        "Copper"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/home/products.ts",
+        "frontend/src/features/home/product-showcase.tsx (dynamic product.image)"
+      ],
+      "business_subject": "Copper",
+      "dimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "asset_type": "photo",
+      "uncertainty": "AI-generated category illustration, documented in docs/image-prompts/copper-studio.md; not a photograph of a verified supplied part.",
+      "sha256": "3fbc7a46bd5e2f9098bf7a8ceaf75956422af124b92796b71f6b391ff18944d7"
+    },
+    {
+      "exported_relative_filename": "photos/bus-boots.png",
+      "original_source": "frontend/public/images/busboots.png",
+      "existing_alt_text": [
+        "",
+        "Bus boots",
+        "Bus Boots"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/",
+        "/products/bus-boots",
+        "/products"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/home/products.ts",
+        "frontend/src/features/products/families.ts",
+        "frontend/src/features/products/products-page.tsx (dynamic family.image)",
+        "frontend/src/features/products/product-detail-page.tsx (dynamic product.image)",
+        "frontend/src/features/home/product-showcase.tsx (dynamic product.image)",
+        "frontend/src/features/portal/catalog.ts (data reference only; no current rendered image consumer found)"
+      ],
+      "business_subject": "Bus Boots",
+      "dimensions": {
+        "width": 1168,
+        "height": 880
+      },
+      "asset_type": "photo",
+      "uncertainty": "Detailed product information is incomplete; do not infer specification.",
+      "sha256": "ac6e98d4a96555f6cc44e908373af883af46f31eaf9a4ac8d26c5f3ec41e732e"
+    },
+    {
+      "exported_relative_filename": "photos/aluminum-castings.png",
+      "original_source": "frontend/public/images/castingsimage.png",
+      "existing_alt_text": [
+        "",
+        "Castings"
+      ],
+      "caption": null,
+      "where_appeared": [
+        "/",
+        "/products/castings",
+        "/datasheets",
+        "/products"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/datasheets/datasheets-page.tsx",
+        "frontend/src/features/home/products.ts",
+        "frontend/src/features/products/content.ts",
+        "frontend/src/features/products/products-page.tsx (dynamic family.image)",
+        "frontend/src/features/products/product-detail-page.tsx (dynamic product.image)",
+        "frontend/src/features/home/product-showcase.tsx (dynamic product.image)",
+        "frontend/src/features/portal/catalog.ts (data reference only; no current rendered image consumer found)"
+      ],
+      "business_subject": "Castings",
+      "dimensions": {
+        "width": 1168,
+        "height": 880
+      },
+      "asset_type": "photo",
+      "uncertainty": "Representative category image; photo/render provenance not individually documented.",
+      "sha256": "1beb58f7288e42a06aef79b2fee7b1b49194f15114a63195404e34e124fa8dca"
+    },
+    {
+      "exported_relative_filename": "photos/survey-drone-on-snow.avif",
+      "original_source": "frontend/public/images/grid-landscape.avif",
+      "existing_alt_text": [
+        "A sensor-equipped survey drone resting on snow-covered ground near a tree line"
+      ],
+      "caption": "Small parts. Lasting connections.",
+      "where_appeared": [
+        "/about"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/about/about-page.tsx"
+      ],
+      "business_subject": "About-page illustration",
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "asset_type": "photo",
+      "uncertainty": "Business relevance and ownership unconfirmed. Retained because actively used; not evidence that Accretion offers drone services.",
+      "sha256": "ea32d7e8ae46210deb761123d37aa5fffa92fb8841751a522d3a5f88e222628b"
+    },
+    {
+      "exported_relative_filename": "photos/pittsburgh-fort-pitt-bridge.webp",
+      "original_source": "frontend/public/images/Downtown-Pittsburgh-Pennsylvania-Fort-Pitt-Bridge-Monongahela.webp",
+      "existing_alt_text": [
+        "Downtown Pittsburgh and the Fort Pitt Bridge over the Monongahela River"
+      ],
+      "caption": "Small parts. Lasting connections.",
+      "where_appeared": [
+        "/"
+      ],
+      "usage_source_files": [
+        "frontend/src/features/home/landing-page.tsx"
+      ],
+      "business_subject": "Company location illustration",
+      "dimensions": {
+        "width": 1600,
+        "height": 1056
+      },
+      "asset_type": "photo",
+      "uncertainty": "Location description comes from existing filename and alt text; not a company facility or project claim.",
+      "sha256": "3b1258d1c8445d02e666fcc2004465681681da456afc98e13bd5791099d1268b"
+    },
+    {
+      "exported_relative_filename": "photos/earth-blue-marble.jpg",
+      "original_source": "frontend/public/images/earth-blue-marble.jpg",
+      "existing_alt_text": [
+        ""
+      ],
+      "caption": null,
+      "where_appeared": [
+        "Shared footer"
+      ],
+      "usage_source_files": [
+        "frontend/src/components/layout/closing-footer.tsx"
+      ],
+      "business_subject": "Global reach illustration",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "asset_type": "photo",
+      "uncertainty": "NASA image, not Accretion property. Credit retained in manifest.",
+      "sha256": "13419b34c17722be52b4a71a7f0beb3ecc8673183c8a2cee8572d5cd9bbe3f93",
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center; Apollo 17, December 7, 1972",
+      "public_source_url": "https://svs.gsfc.nasa.gov/vis/a030000/a030600/a030613/blue_marble_apollo_17_19721207_print.jpg"
+    },
+    {
+      "exported_relative_filename": "logos/accretion-power-ap-original.png",
+      "original_source": "frontend/public/images/ap-logo-white-on-black.png",
+      "existing_alt_text": [],
+      "caption": null,
+      "where_appeared": [
+        "Available repository company logo; not referenced by current public components"
+      ],
+      "business_subject": "Accretion Power AP monogram",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "asset_type": "logo",
+      "uncertainty": "Available raster asset/variant; source vector and original authorship/approval history not found. Text wordmark in page headers is not an image export.",
+      "sha256": "a559c95fe51fdb568cad54751a4474386041c73cf2fa2ff07e2dea678aa5f324"
+    },
+    {
+      "exported_relative_filename": "logos/accretion-power-ap-icon.png",
+      "original_source": "frontend/src/app/icon.png",
+      "existing_alt_text": [],
+      "caption": null,
+      "where_appeared": [
+        "Site browser/app icon"
+      ],
+      "business_subject": "Accretion Power AP monogram",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      },
+      "asset_type": "logo",
+      "uncertainty": "Available raster asset/variant; source vector and original authorship/approval history not found. Text wordmark in page headers is not an image export.",
+      "sha256": "36a0be72627e9cfa12219f5c43bbb52e1b9e7d83b8a70a40f11e31bc7097c87f"
+    },
+    {
+      "exported_relative_filename": "logos/accretion-power-ap-favicon.ico",
+      "original_source": "frontend/src/app/favicon.ico",
+      "existing_alt_text": [],
+      "caption": null,
+      "where_appeared": [
+        "Site browser/app icon"
+      ],
+      "business_subject": "Accretion Power AP monogram",
+      "dimensions": {
+        "variants": [
+          {
+            "width": 16,
+            "height": 16
+          },
+          {
+            "width": 32,
+            "height": 32
+          },
+          {
+            "width": 48,
+            "height": 48
+          }
+        ]
+      },
+      "asset_type": "logo",
+      "uncertainty": "Available raster asset/variant; source vector and original authorship/approval history not found. Text wordmark in page headers is not an image export.",
+      "sha256": "cf8e0fee4758f6efc0dd557714ac304b088a924ae19df458c6a60d8226cb4905"
+    }
+  ]
+}
